@@ -1,0 +1,48 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:players-championship-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270308
+SUMMARY:Players Championship
+LOCATION:Telford International Centre\, Telford\, England
+DESCRIPTION:A limited-field event based on season performance.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-open-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270322
+SUMMARY:World Open
+LOCATION:Yushan Sport Centre\, Yushan\, China
+DESCRIPTION:Do not confuse this event with the World Championship in Shef
+ field.\nChecked 5 September 2026. Dates may change. One-time import\; re
+ check the organiser.\nSource: https://res.snooker.org/res/index.asp?seas
+ on=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tour-championship-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270405
+SUMMARY:Tour Championship
+LOCATION:Manchester Central\, Manchester\, England
+DESCRIPTION:Spans March and April\; the field is selected through season 
+ performance.\nChecked 5 September 2026. Dates may change. One-time impor
+ t\; recheck the organiser.\nSource: https://www.wst.tv/fullcalendarwiths
+ eedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:welsh-open-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270204
+SUMMARY:Welsh Open qualifiers
+LOCATION:Ponds Forge\, Sheffield\, England
+DESCRIPTION:Qualifying dates immediately precede the Welsh main event.\nC
+ hecked 5 September 2026. Dates may change. One-time import\; recheck the
+  organiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&t
+ emplate=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-open-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270207
+SUMMARY:World Open qualifiers
+LOCATION:Ponds Forge\, Sheffield\, England
+DESCRIPTION:English qualifying stage for the March tournament in China.\n
+ Checked 5 September 2026. Dates may change. One-time import\; recheck th
+ e organiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&
+ template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:welsh-open-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270215
+SUMMARY:Welsh Open
+LOCATION:Venue Cymru\, Llandudno\, Wales
+DESCRIPTION:The Welsh leg of the Home Nations series.\nChecked 5 Septembe
+ r 2026. Dates may change. One-time import\; recheck the organiser.\nSour
+ ce: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-grand-prix-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270222
+SUMMARY:World Grand Prix
+LOCATION:Kai Tak Arena\, Hong Kong\, Hong Kong
+DESCRIPTION:A limited-field ranking event\; player eligibility is determi
+ ned by the relevant season list.\nChecked 5 September 2026. Dates may ch
+ ange. One-time import\; recheck the organiser.\nSource: https://res.snoo
+ ker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

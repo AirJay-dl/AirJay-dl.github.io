@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:masters-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270118
+SUMMARY:The Masters
+LOCATION:Alexandra Palace\, London\, England
+DESCRIPTION:A Triple Crown invitational. Its results do not contribute to
+  the main world ranking list.\nChecked 5 September 2026. Dates may chang
+ e. One-time import\; recheck the organiser.\nSource: https://www.wst.tv/
+ fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

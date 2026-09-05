@@ -1,0 +1,62 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:shanghai-masters-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260803
+SUMMARY:Shanghai Masters
+LOCATION:Luwan Gymnasium\, Shanghai\, China
+DESCRIPTION:An invitational event\; do not confuse it with the German Mas
+ ters.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://res.snooker.org/res/index.asp?seaso
+ n=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:china-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260817
+SUMMARY:China Open
+LOCATION:Sports Centre\, Taiyuan\, China
+DESCRIPTION:Event dates and city are listed in the season calendar.\nChec
+ ked 5 September 2026. Dates may change. One-time import\; recheck the or
+ ganiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&temp
+ late=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wuhan-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260830
+SUMMARY:Wuhan Open
+LOCATION:Venue not verified\, Wuhan\, China
+DESCRIPTION:Check the organiser for the precise venue and session program
+ me.\nChecked 5 September 2026. Dates may change. One-time import\; reche
+ ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
+ -offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:british-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260907
+SUMMARY:British Open
+LOCATION:The Centaur\, Cheltenham\, England
+DESCRIPTION:The event spans August and September. It therefore appears in
+  both monthly views.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

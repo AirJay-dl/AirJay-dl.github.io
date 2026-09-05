@@ -1,0 +1,87 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:british-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260907
+SUMMARY:British Open
+LOCATION:The Centaur\, Cheltenham\, England
+DESCRIPTION:The event spans August and September. It therefore appears in
+  both monthly views.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:english-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:English Open
+LOCATION:Brentwood Centre\, Brentwood\, England
+DESCRIPTION:The main event follows the British Open. Check the draw befor
+ e buying a ticket for a particular player.\nChecked 5 September 2026. Da
+ tes may change. One-time import\; recheck the organiser.\nSource: https:
+ //everyoneevents.com/whats-on/english-open-2026/
+URL:https://everyoneevents.com/whats-on/english-open-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:northern-ireland-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260917
+SUMMARY:Northern Ireland Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifying takes place in Leicester\; the main tournament is 
+ in Belfast.\nChecked 5 September 2026. Dates may change. One-time import
+ \; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:international-championship-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260920
+SUMMARY:International Championship qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:This listing covers qualifying\, not the main event in Nanjin
+ g.\nChecked 5 September 2026. Dates may change. One-time import\; rechec
+ k the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scottish-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260924
+SUMMARY:Scottish Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:The qualifying stage is in England\; the December main event 
+ is in Scotland.\nChecked 5 September 2026. Dates may change. One-time im
+ port\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shenzhen-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261005
+SUMMARY:Shenzhen Open
+LOCATION:Venue not verified\, Shenzhen\, China
+DESCRIPTION:The current WST listing says Shenzhen Open. Earlier provision
+ al calendars called this slot Xi’an Grand Prix.\nChecked 5 September 2
+ 026. Dates may change. One-time import\; recheck the organiser.\nSource:
+  https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

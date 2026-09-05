@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:british-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260907
+SUMMARY:British Open
+LOCATION:The Centaur\, Cheltenham\, England
+DESCRIPTION:The event spans August and September. It therefore appears in
+  both monthly views.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
