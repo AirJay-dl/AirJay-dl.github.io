@@ -1,0 +1,3 @@
+import {articles} from '@/content/articles';
+import {href} from '@/lib/site';
+export function StoryCards({category}:{category?:string}){return <div className="story-grid">{articles.filter(a=>!category||a.category===category).map((a,i)=><article className="story-card" key={a.slug}><div className="story-number">{String(i+1).padStart(2,'0')}<span>{a.category}</span></div><h3><a href={href(`/${a.category==='News'?'news':'stories'}/${a.slug}/`)}>{a.title}</a></h3><p>{a.description}</p><a className="text-link" href={href(`/${a.category==='News'?'news':'stories'}/${a.slug}/`)}>Read {a.category==='News'?'briefing':'story'} ↗</a></article>)}</div>}

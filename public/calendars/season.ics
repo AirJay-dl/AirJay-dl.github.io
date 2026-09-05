@@ -1,0 +1,580 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:china-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260615
+SUMMARY:China Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifying stage\; separate from the main tournament in China
+ .\nChecked 5 September 2026. Dates may change. One-time import\; recheck
+  the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut-o
+ ffs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wuhan-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260615
+DTEND;VALUE=DATE:20260619
+SUMMARY:Wuhan Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifying stage for the August tournament.\nChecked 5 Septem
+ ber 2026. Dates may change. One-time import\; recheck the organiser.\nSo
+ urce: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260716
+SUMMARY:Championship League
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Staged across several groups and playing blocks\; this range 
+ includes rest days.\nChecked 5 September 2026. Dates may change. One-tim
+ e import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalend
+ arwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shenzhen-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260723
+SUMMARY:Shenzhen Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Earlier provisional calendars used the name Xi’an Grand Pri
+ x for this slot.\nChecked 5 September 2026. Dates may change. One-time i
+ mport\; recheck the organiser.\nSource: https://res.snooker.org/res/inde
+ x.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:british-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260725
+SUMMARY:British Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifiers precede the main event in Cheltenham.\nChecked 5 S
+ eptember 2026. Dates may change. One-time import\; recheck the organiser
+ .\nSource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:english-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:English Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:These qualifying dates are distinct from the September main e
+ vent.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingc
+ ut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-masters-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260803
+SUMMARY:Shanghai Masters
+LOCATION:Luwan Gymnasium\, Shanghai\, China
+DESCRIPTION:An invitational event\; do not confuse it with the German Mas
+ ters.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://res.snooker.org/res/index.asp?seaso
+ n=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:china-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260817
+SUMMARY:China Open
+LOCATION:Sports Centre\, Taiyuan\, China
+DESCRIPTION:Event dates and city are listed in the season calendar.\nChec
+ ked 5 September 2026. Dates may change. One-time import\; recheck the or
+ ganiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&temp
+ late=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wuhan-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260823
+DTEND;VALUE=DATE:20260830
+SUMMARY:Wuhan Open
+LOCATION:Venue not verified\, Wuhan\, China
+DESCRIPTION:Check the organiser for the precise venue and session program
+ me.\nChecked 5 September 2026. Dates may change. One-time import\; reche
+ ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
+ -offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:british-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260907
+SUMMARY:British Open
+LOCATION:The Centaur\, Cheltenham\, England
+DESCRIPTION:The event spans August and September. It therefore appears in
+  both monthly views.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:english-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:English Open
+LOCATION:Brentwood Centre\, Brentwood\, England
+DESCRIPTION:The main event follows the British Open. Check the draw befor
+ e buying a ticket for a particular player.\nChecked 5 September 2026. Da
+ tes may change. One-time import\; recheck the organiser.\nSource: https:
+ //everyoneevents.com/whats-on/english-open-2026/
+URL:https://everyoneevents.com/whats-on/english-open-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:northern-ireland-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260917
+SUMMARY:Northern Ireland Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifying takes place in Leicester\; the main tournament is 
+ in Belfast.\nChecked 5 September 2026. Dates may change. One-time import
+ \; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:international-championship-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260920
+SUMMARY:International Championship qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:This listing covers qualifying\, not the main event in Nanjin
+ g.\nChecked 5 September 2026. Dates may change. One-time import\; rechec
+ k the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scottish-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260924
+SUMMARY:Scottish Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:The qualifying stage is in England\; the December main event 
+ is in Scotland.\nChecked 5 September 2026. Dates may change. One-time im
+ port\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shenzhen-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20261005
+SUMMARY:Shenzhen Open
+LOCATION:Venue not verified\, Shenzhen\, China
+DESCRIPTION:The current WST listing says Shenzhen Open. Earlier provision
+ al calendars called this slot Xi’an Grand Prix.\nChecked 5 September 2
+ 026. Dates may change. One-time import\; recheck the organiser.\nSource:
+  https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:northern-ireland-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261026
+SUMMARY:Northern Ireland Open
+LOCATION:Waterfront Hall\, Belfast\, Northern Ireland
+DESCRIPTION:Part of the Home Nations series. September qualifiers have a 
+ separate listing.\nChecked 5 September 2026. Dates may change. One-time 
+ import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalendar
+ withseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:international-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261108
+SUMMARY:International Championship
+LOCATION:Venue not verified\, Nanjing\, China
+DESCRIPTION:Spans October and November. Confirm venue details with WST be
+ fore planning a visit.\nChecked 5 September 2026. Dates may change. One-
+ time import\; recheck the organiser.\nSource: https://www.wst.tv/fullcal
+ endarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:champion-of-champions-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261116
+SUMMARY:Champion of Champions
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:An invitational competition with its own qualification criter
+ ia.\nChecked 5 September 2026. Dates may change. One-time import\; reche
+ ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
+ -offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:german-masters-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261120
+SUMMARY:German Masters qualifiers
+LOCATION:Robin Park\, Wigan\, England
+DESCRIPTION:Qualifying venue is Wigan in the current secondary listing. R
+ echeck the organiser before travel.\nChecked 5 September 2026. Dates may
+  change. One-time import\; recheck the organiser.\nSource: https://res.s
+ nooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:uk-championship-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261127
+SUMMARY:UK Championship qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Separate from the main tournament in York.\nChecked 5 Septemb
+ er 2026. Dates may change. One-time import\; recheck the organiser.\nSou
+ rce: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:uk-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261207
+SUMMARY:UK Championship
+LOCATION:York Barbican\, York\, England
+DESCRIPTION:One of snooker’s three Triple Crown events\, spanning Novem
+ ber and December.\nChecked 5 September 2026. Dates may change. One-time 
+ import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalendar
+ withseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shoot-out-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261213
+SUMMARY:Shoot Out
+LOCATION:Tower Circus\, Blackpool\, England
+DESCRIPTION:Uses a special timed\, single-frame format. Read the event ru
+ les before comparing it with conventional tournaments.\nChecked 5 Septem
+ ber 2026. Dates may change. One-time import\; recheck the organiser.\nSo
+ urce: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:scottish-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261221
+SUMMARY:Scottish Open
+LOCATION:Meadowbank Sports Centre\, Edinburgh\, Scotland
+DESCRIPTION:The Scottish leg of the Home Nations series.\nChecked 5 Septe
+ mber 2026. Dates may change. One-time import\; recheck the organiser.\nS
+ ource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-1-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261223
+SUMMARY:Championship League · Group 1
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:The invitational edition is distinct from the summer ranking 
+ event.\nChecked 5 September 2026. Dates may change. One-time import\; re
+ check the organiser.\nSource: https://res.snooker.org/res/index.asp?seas
+ on=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-2-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270104
+SUMMARY:Championship League · Group 2
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates\; not a knockout championship week.\nChecke
+ d 5 September 2026. Dates may change. One-time import\; recheck the orga
+ niser.\nSource: https://res.snooker.org/res/index.asp?season=2026&templa
+ te=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-3-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270106
+SUMMARY:Championship League · Group 3
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-4-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270108
+SUMMARY:Championship League · Group 4
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-5-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270110
+SUMMARY:Championship League · Group 5
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:masters-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270118
+SUMMARY:The Masters
+LOCATION:Alexandra Palace\, London\, England
+DESCRIPTION:A Triple Crown invitational. Its results do not contribute to
+  the main world ranking list.\nChecked 5 September 2026. Dates may chang
+ e. One-time import\; recheck the organiser.\nSource: https://www.wst.tv/
+ fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-6-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270120
+SUMMARY:Championship League · Group 6
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-group-7-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270122
+SUMMARY:Championship League · Group 7
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:championship-league-winners-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270124
+SUMMARY:Championship League · Winners Group
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:The closing group of the invitational competition.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://res.snooker.org/res/index.asp?season=2026&template=
+ 2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:german-masters-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270201
+SUMMARY:German Masters
+LOCATION:Tempodrom\, Berlin\, Germany
+DESCRIPTION:The main event is in Berlin\; the November qualifying stage i
+ s listed separately.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalen
+ darwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:welsh-open-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270204
+SUMMARY:Welsh Open qualifiers
+LOCATION:Ponds Forge\, Sheffield\, England
+DESCRIPTION:Qualifying dates immediately precede the Welsh main event.\nC
+ hecked 5 September 2026. Dates may change. One-time import\; recheck the
+  organiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&t
+ emplate=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-open-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270207
+SUMMARY:World Open qualifiers
+LOCATION:Ponds Forge\, Sheffield\, England
+DESCRIPTION:English qualifying stage for the March tournament in China.\n
+ Checked 5 September 2026. Dates may change. One-time import\; recheck th
+ e organiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&
+ template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:welsh-open-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270215
+SUMMARY:Welsh Open
+LOCATION:Venue Cymru\, Llandudno\, Wales
+DESCRIPTION:The Welsh leg of the Home Nations series.\nChecked 5 Septembe
+ r 2026. Dates may change. One-time import\; recheck the organiser.\nSour
+ ce: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-grand-prix-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270216
+DTEND;VALUE=DATE:20270222
+SUMMARY:World Grand Prix
+LOCATION:Kai Tak Arena\, Hong Kong\, Hong Kong
+DESCRIPTION:A limited-field ranking event\; player eligibility is determi
+ ned by the relevant season list.\nChecked 5 September 2026. Dates may ch
+ ange. One-time import\; recheck the organiser.\nSource: https://res.snoo
+ ker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:players-championship-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270308
+SUMMARY:Players Championship
+LOCATION:Telford International Centre\, Telford\, England
+DESCRIPTION:A limited-field event based on season performance.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-open-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270322
+SUMMARY:World Open
+LOCATION:Yushan Sport Centre\, Yushan\, China
+DESCRIPTION:Do not confuse this event with the World Championship in Shef
+ field.\nChecked 5 September 2026. Dates may change. One-time import\; re
+ check the organiser.\nSource: https://res.snooker.org/res/index.asp?seas
+ on=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:tour-championship-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270405
+SUMMARY:Tour Championship
+LOCATION:Manchester Central\, Manchester\, England
+DESCRIPTION:Spans March and April\; the field is selected through season 
+ performance.\nChecked 5 September 2026. Dates may change. One-time impor
+ t\; recheck the organiser.\nSource: https://www.wst.tv/fullcalendarwiths
+ eedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-championship-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270415
+SUMMARY:World Championship qualifiers
+LOCATION:English Institute of Sport\, Sheffield\, England
+DESCRIPTION:Qualifying is held at a different venue from the Crucible mai
+ n event.\nChecked 5 September 2026. Dates may change. One-time import\; 
+ recheck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedi
+ ngcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:world-championship-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270504
+SUMMARY:World Championship
+LOCATION:Crucible Theatre\, Sheffield\, England
+DESCRIPTION:The season’s concluding Triple Crown event. Dates are provi
+ sional and subject to organiser updates.\nChecked 5 September 2026. Date
+ s may change. One-time import\; recheck the organiser.\nSource: https://
+ www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

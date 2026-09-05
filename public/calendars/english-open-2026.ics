@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:english-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260914
+SUMMARY:English Open
+LOCATION:Brentwood Centre\, Brentwood\, England
+DESCRIPTION:The main event follows the British Open. Check the draw befor
+ e buying a ticket for a particular player.\nChecked 5 September 2026. Da
+ tes may change. One-time import\; recheck the organiser.\nSource: https:
+ //everyoneevents.com/whats-on/english-open-2026/
+URL:https://everyoneevents.com/whats-on/english-open-2026/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

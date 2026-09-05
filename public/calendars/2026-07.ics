@@ -1,0 +1,76 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:championship-league-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260622
+DTEND;VALUE=DATE:20260716
+SUMMARY:Championship League
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Staged across several groups and playing blocks\; this range 
+ includes rest days.\nChecked 5 September 2026. Dates may change. One-tim
+ e import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalend
+ arwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shenzhen-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260723
+SUMMARY:Shenzhen Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Earlier provisional calendars used the name Xi’an Grand Pri
+ x for this slot.\nChecked 5 September 2026. Dates may change. One-time i
+ mport\; recheck the organiser.\nSource: https://res.snooker.org/res/inde
+ x.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:british-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260725
+SUMMARY:British Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifiers precede the main event in Cheltenham.\nChecked 5 S
+ eptember 2026. Dates may change. One-time import\; recheck the organiser
+ .\nSource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:english-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:English Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:These qualifying dates are distinct from the September main e
+ vent.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingc
+ ut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:shanghai-masters-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260803
+SUMMARY:Shanghai Masters
+LOCATION:Luwan Gymnasium\, Shanghai\, China
+DESCRIPTION:An invitational event\; do not confuse it with the German Mas
+ ters.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://res.snooker.org/res/index.asp?seaso
+ n=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
