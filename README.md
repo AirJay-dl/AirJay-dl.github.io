@@ -1,10 +1,10 @@
 # The Snooker Calendar
 
-Independent English-language snooker calendar and editorial website for the 2026/27 season. Published by AirJay-dl. Contact: jieliang17@gmail.com.
+Independent English-language snooker calendar and editorial website for the 2026/27 season. Published by AirJay-dl. Contact: contact@snookercalendar.com.
 
 ## Stack and use
 
-React 19, TypeScript, Vinext, Tailwind, the supplied Shadcn/Base UI primitives. Static HTML export for GitHub Pages, with a Sites-compatible packaging manifest. No server database, API key, analytics or advertising scripts.
+React 19, TypeScript, Vinext, Tailwind, the supplied Shadcn/Base UI primitives. Static HTML export for GitHub Pages, with a Sites-compatible packaging manifest. Google Analytics loads only after the visitor accepts analytics cookies.
 
 Node 24 and pnpm 11.19.0:
 

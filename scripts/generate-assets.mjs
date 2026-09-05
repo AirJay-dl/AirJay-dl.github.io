@@ -2,7 +2,7 @@ import {mkdirSync,writeFileSync} from 'node:fs';
 import {events,months,inMonth} from '../content/events.ts';
 import {articles} from '../content/articles.ts';
 import {players} from '../content/players.ts';
-const origin=(process.env.NEXT_PUBLIC_SITE_URL||'https://snooker-calendar.lamkun-7559.chatgpt.site').replace(/\/$/,'');
+const origin=(process.env.NEXT_PUBLIC_SITE_URL||'https://snookercalendar.com').replace(/\/$/,'');
 const escapeXml=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const escapeIcs=s=>s.replaceAll('\\','\\\\').replaceAll('\n','\\n').replaceAll(',','\\,').replaceAll(';','\\;');
 const fold=line=>{let parts=[],segment='',bytes=0;for(const char of line){const n=Buffer.byteLength(char);if(bytes+n>73){parts.push(segment);segment=' ';bytes=1;}segment+=char;bytes+=n;}parts.push(segment);return parts.join('\r\n')};

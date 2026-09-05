@@ -1,8 +1,8 @@
 export const site = {
   name: 'The Snooker Calendar',
-  origin: (process.env.NEXT_PUBLIC_SITE_URL || 'https://snooker-calendar.lamkun-7559.chatgpt.site').replace(/\/$/, ''),
+  origin: (process.env.NEXT_PUBLIC_SITE_URL || 'https://snookercalendar.com').replace(/\/$/, ''),
   basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  email: 'jieliang17@gmail.com',
+  email: 'contact@snookercalendar.com',
   github: 'https://github.com/AirJay-dl',
   checked: '2026-09-05',
 };

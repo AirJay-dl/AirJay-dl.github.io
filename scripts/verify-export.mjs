@@ -2,7 +2,7 @@ import {readFileSync,readdirSync,existsSync,statSync} from 'node:fs';
 import {join} from 'node:path';
 import assert from 'node:assert/strict';
 import {events,inMonth} from '../content/events.ts';
-const origin=(process.env.NEXT_PUBLIC_SITE_URL||'https://snooker-calendar.lamkun-7559.chatgpt.site').replace(/\/$/,'');
+const origin=(process.env.NEXT_PUBLIC_SITE_URL||'https://snookercalendar.com').replace(/\/$/,'');
 const base=process.env.NEXT_PUBLIC_BASE_PATH||'';
 const files=[];const walk=d=>{for(const e of readdirSync(d,{withFileTypes:true})){const p=join(d,e.name);if(e.isDirectory())walk(p);else if(p.endsWith('.html'))files.push(p)}};walk('out');
 const errors=[],titles=new Set(),canonicals=new Set();
