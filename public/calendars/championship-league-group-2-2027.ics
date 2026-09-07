@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:championship-league-group-2-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270104
+SUMMARY:Championship League · Group 2
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Group-stage dates\; not a knockout championship week.\nChecke
+ d 5 September 2026. Dates may change. One-time import\; recheck the orga
+ niser.\nSource: https://res.snooker.org/res/index.asp?season=2026&templa
+ te=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

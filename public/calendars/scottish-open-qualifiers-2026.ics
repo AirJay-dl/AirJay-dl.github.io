@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:scottish-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260924
+SUMMARY:Scottish Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:The qualifying stage is in England\; the December main event 
+ is in Scotland.\nChecked 5 September 2026. Dates may change. One-time im
+ port\; recheck the organiser.\nSource: https://www.wst.tv/
+URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

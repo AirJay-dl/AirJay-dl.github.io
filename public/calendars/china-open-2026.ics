@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:china-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260817
+SUMMARY:China Open
+LOCATION:Sports Centre\, Taiyuan\, China
+DESCRIPTION:Event dates and city are listed in the season calendar.\nChec
+ ked 5 September 2026. Dates may change. One-time import\; recheck the or
+ ganiser.\nSource: https://res.snooker.org/res/index.asp?season=2026&temp
+ late=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

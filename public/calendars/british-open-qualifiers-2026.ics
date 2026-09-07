@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:british-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260725
+SUMMARY:British Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:Qualifiers precede the main event in Cheltenham.\nChecked 5 S
+ eptember 2026. Dates may change. One-time import\; recheck the organiser
+ .\nSource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -45,6 +45,19 @@ URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-6-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270111
+SUMMARY:Q Tour 6
+LOCATION:De Pomerans Snooker\, Dochristi\, Belgium
+DESCRIPTION:The sixth European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:championship-league-group-5-2027@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20270108
@@ -94,6 +107,20 @@ LOCATION:Mattioli Arena\, Leicester\, England
 DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
  ptember 2026. Dates may change. One-time import\; recheck the organiser.
  \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asia-pacific-q-tour-5-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270126
+SUMMARY:Asia Pacific Q Tour 5
+LOCATION:Redcliffe Snooker Club\, Brisbane\, Australia
+DESCRIPTION:The fifth Asia-Pacific Q Tour event of the season.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://res.snooker.org/res/index.asp?season=2026&template=
+ 2
 URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT

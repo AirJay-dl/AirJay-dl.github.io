@@ -19,6 +19,20 @@ URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:asia-pacific-q-tour-3-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260803
+SUMMARY:Asia Pacific Q Tour 3
+LOCATION:Commercial Club Albury\, Albury\, Australia
+DESCRIPTION:The third Asia-Pacific Q Tour event of the season.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://res.snooker.org/res/index.asp?season=2026&template=
+ 2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:china-open-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20260808
@@ -44,6 +58,19 @@ DESCRIPTION:Check the organiser for the precise venue and session program
  ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
  -offs/
 URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:q-tour-1-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260831
+SUMMARY:Q Tour 1
+LOCATION:Northern Snooker Centre\, Leeds\, England
+DESCRIPTION:The first European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

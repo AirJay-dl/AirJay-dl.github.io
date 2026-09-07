@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:international-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261108
+SUMMARY:International Championship
+LOCATION:Venue not verified\, Nanjing\, China
+DESCRIPTION:Spans October and November. Confirm venue details with WST be
+ fore planning a visit.\nChecked 5 September 2026. Dates may change. One-
+ time import\; recheck the organiser.\nSource: https://www.wst.tv/fullcal
+ endarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

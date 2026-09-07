@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:uk-womens-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260907
+SUMMARY:UK Women's Championship
+LOCATION:Northern Snooker Centre\, Leeds\, England
+DESCRIPTION:A Women's World Snooker Tour ranking event.\nChecked 5 Septem
+ ber 2026. Dates may change. One-time import\; recheck the organiser.\nSo
+ urce: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

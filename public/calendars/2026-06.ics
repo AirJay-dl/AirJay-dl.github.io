@@ -45,4 +45,18 @@ DESCRIPTION:Staged across several groups and playing blocks\; this range
 URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
+BEGIN:VEVENT
+UID:asia-pacific-q-tour-1-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260629
+SUMMARY:Asia Pacific Q Tour 1
+LOCATION:Pot Black North Perth\, Perth\, Australia
+DESCRIPTION:The opening Asia-Pacific Q Tour event of the season.\nChecked
+  5 September 2026. Dates may change. One-time import\; recheck the organ
+ iser.\nSource: https://res.snooker.org/res/index.asp?season=2026&templat
+ e=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR

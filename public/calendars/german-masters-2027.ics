@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:german-masters-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270201
+SUMMARY:German Masters
+LOCATION:Tempodrom\, Berlin\, Germany
+DESCRIPTION:The main event is in Berlin\; the November qualifying stage i
+ s listed separately.\nChecked 5 September 2026. Dates may change. One-ti
+ me import\; recheck the organiser.\nSource: https://www.wst.tv/fullcalen
+ darwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

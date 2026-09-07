@@ -19,6 +19,19 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-5-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261207
+SUMMARY:Q Tour 5
+LOCATION:Landywood Snooker Club\, Walsall\, England
+DESCRIPTION:The fifth European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:shoot-out-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20261209
@@ -56,6 +69,19 @@ DESCRIPTION:The invitational edition is distinct from the summer ranking
  event.\nChecked 5 September 2026. Dates may change. One-time import\; re
  check the organiser.\nSource: https://res.snooker.org/res/index.asp?seas
  on=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:british-seniors-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261229
+SUMMARY:British Seniors Open
+LOCATION:Vaillant Live\, Derby\, England
+DESCRIPTION:A World Seniors Snooker event.\nChecked 5 September 2026. Dat
+ es may change. One-time import\; recheck the organiser.\nSource: https:/
+ /res.snooker.org/res/index.asp?season=2026&template=2
 URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT

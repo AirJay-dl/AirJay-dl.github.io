@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:english-open-qualifiers-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260727
+SUMMARY:English Open qualifiers
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:These qualifying dates are distinct from the September main e
+ vent.\nChecked 5 September 2026. Dates may change. One-time import\; rec
+ heck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingc
+ ut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

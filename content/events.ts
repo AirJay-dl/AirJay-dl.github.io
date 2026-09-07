@@ -1,4 +1,4 @@
-export type Tournament = {slug:string;name:string;start:string;end:string;venue:string;city:string;country:string;type:'Ranking'|'Invitational'|'Qualifying';source:string;note:string;featured?:boolean};
+export type Tournament = {slug:string;name:string;start:string;end:string;venue:string;city:string;country:string;type:'Ranking'|'Invitational'|'Qualifying'|'Seniors'|'Other';tour:'Main'|'Q Tour'|'Women'|'Seniors'|'Other';source:string;note:string;featured?:boolean;winner?:string;runnerUp?:string;finalScore?:string;firstPrize?:string};
 const official='https://www.wst.tv/fullcalendarwithseedingcut-offs/';
 const current='https://www.wst.tv/';
 const secondary='https://res.snooker.org/res/index.asp?season=2026&template=2';
@@ -46,7 +46,31 @@ const rows: [string,string,string,string,string,string,string,Tournament['type']
 ['world-championship-qualifiers-2027','World Championship qualifiers','2027-04-05','2027-04-14','English Institute of Sport','Sheffield','England','Qualifying',official,'Qualifying is held at a different venue from the Crucible main event.'],
 ['world-championship-2027','World Championship','2027-04-17','2027-05-03','Crucible Theatre','Sheffield','England','Ranking',official,'The season’s concluding Triple Crown event. Dates are provisional and subject to organiser updates.',true]
 ];
-export const events:Tournament[]=rows.map(([slug,name,start,end,venue,city,country,type,source,note,featured])=>({slug,name,start,end,venue,city,country,type,source,note,featured}));
+const mainEvents:Tournament[]=rows.map(([slug,name,start,end,venue,city,country,type,source,note,featured])=>({slug,name,start,end,venue,city,country,type,tour:'Main',source,note,featured}));
+const globalEvents:Tournament[]=[
+{slug:'asia-pacific-q-tour-1-2026',name:'Asia Pacific Q Tour 1',start:'2026-06-26',end:'2026-06-28',venue:'Pot Black North Perth',city:'Perth',country:'Australia',type:'Ranking',tour:'Q Tour',source:secondary,note:'The opening Asia-Pacific Q Tour event of the season.',winner:'Vinnie Calabrese',runnerUp:'Hassan Kerde',finalScore:'5–3'},
+{slug:'asia-pacific-q-tour-2-2026',name:'Asia Pacific Q Tour 2',start:'2026-07-10',end:'2026-07-12',venue:'Papatoetoe Cosmopolitan Club',city:'Auckland',country:'New Zealand',type:'Ranking',tour:'Q Tour',source:secondary,note:'The second Asia-Pacific Q Tour event of the season.',winner:'Mark Canovan',runnerUp:'Joseph Conchie',finalScore:'5–2'},
+{slug:'asia-pacific-q-tour-3-2026',name:'Asia Pacific Q Tour 3',start:'2026-07-31',end:'2026-08-02',venue:'Commercial Club Albury',city:'Albury',country:'Australia',type:'Ranking',tour:'Q Tour',source:secondary,note:'The third Asia-Pacific Q Tour event of the season.',winner:'Hassan Kerde',runnerUp:'Alan McCarthy',finalScore:'4–0'},
+{slug:'q-tour-1-2026',name:'Q Tour 1',start:'2026-08-27',end:'2026-08-30',venue:'Northern Snooker Centre',city:'Leeds',country:'England',type:'Ranking',tour:'Q Tour',source:secondary,note:'The first European Q Tour event of the season.'},
+{slug:'uk-womens-championship-2026',name:"UK Women's Championship",start:'2026-09-04',end:'2026-09-06',venue:'Northern Snooker Centre',city:'Leeds',country:'England',type:'Ranking',tour:'Women',source:secondary,note:"A Women's World Snooker Tour ranking event."},
+{slug:'q-tour-2-2026',name:'Q Tour 2',start:'2026-09-21',end:'2026-09-24',venue:'Princess Hotel',city:'Sofia',country:'Bulgaria',type:'Ranking',tour:'Q Tour',source:secondary,note:'The second European Q Tour event of the season.'},
+{slug:'asia-pacific-q-tour-4-2026',name:'Asia Pacific Q Tour 4',start:'2026-10-08',end:'2026-10-11',venue:'Mounties',city:'Sydney',country:'Australia',type:'Ranking',tour:'Q Tour',source:secondary,note:'The fourth Asia-Pacific Q Tour event of the season.'},
+{slug:'australian-womens-open-2026',name:"Australian Women's Open",start:'2026-10-17',end:'2026-10-20',venue:'Mounties',city:'Sydney',country:'Australia',type:'Ranking',tour:'Women',source:secondary,note:"A Women's World Snooker Tour ranking event."},
+{slug:'q-tour-3-2026',name:'Q Tour 3',start:'2026-10-22',end:'2026-10-25',venue:'Snooker Arena Germany',city:'Oberhausen',country:'Germany',type:'Ranking',tour:'Q Tour',source:secondary,note:'The third European Q Tour event of the season.'},
+{slug:'pan-american-championship-2026',name:'Pan American Championship',start:'2026-11-04',end:'2026-11-08',venue:'Mampituba Country Club',city:'Criciúma',country:'Brazil',type:'Other',tour:'Other',source:secondary,note:'A regional championship included in the global season listing.'},
+{slug:'q-tour-4-2026',name:'Q Tour 4',start:'2026-11-12',end:'2026-11-15',venue:'Austrian Snooker Academy',city:'Vienna',country:'Austria',type:'Ranking',tour:'Q Tour',source:secondary,note:'The fourth European Q Tour event of the season.'},
+{slug:'q-tour-5-2026',name:'Q Tour 5',start:'2026-12-03',end:'2026-12-06',venue:'Landywood Snooker Club',city:'Walsall',country:'England',type:'Ranking',tour:'Q Tour',source:secondary,note:'The fifth European Q Tour event of the season.'},
+{slug:'british-seniors-open-2026',name:'British Seniors Open',start:'2026-12-27',end:'2026-12-28',venue:'Vaillant Live',city:'Derby',country:'England',type:'Seniors',tour:'Seniors',source:secondary,note:'A World Seniors Snooker event.'},
+{slug:'q-tour-6-2027',name:'Q Tour 6',start:'2027-01-07',end:'2027-01-10',venue:'De Pomerans Snooker',city:'Dochristi',country:'Belgium',type:'Ranking',tour:'Q Tour',source:secondary,note:'The sixth European Q Tour event of the season.'},
+{slug:'asia-pacific-q-tour-5-2027',name:'Asia Pacific Q Tour 5',start:'2027-01-22',end:'2027-01-25',venue:'Redcliffe Snooker Club',city:'Brisbane',country:'Australia',type:'Ranking',tour:'Q Tour',source:secondary,note:'The fifth Asia-Pacific Q Tour event of the season.'},
+{slug:'q-tour-7-2027',name:'Q Tour 7',start:'2027-02-11',end:'2027-02-14',venue:'Ding Junhui Snooker Academy',city:'Sheffield',country:'England',type:'Ranking',tour:'Q Tour',source:secondary,note:'The seventh European Q Tour event of the season.'}
+];
+const finals:Record<string,Pick<Tournament,'winner'|'runnerUp'|'finalScore'|'firstPrize'>>={
+ 'championship-league-2026':{winner:'Jak Jones',runnerUp:'David Gilbert',finalScore:'3–2',firstPrize:'£33,000'},
+ 'shanghai-masters-2026':{winner:'Judd Trump',runnerUp:'Kyren Wilson',finalScore:'11–6',firstPrize:'£210,000'},
+ 'china-open-2026':{winner:'Mark Selby',runnerUp:'Noppon Saengkham',finalScore:'10–6',firstPrize:'£250,000'}
+};
+export const events:Tournament[]=[...mainEvents,...globalEvents].map(e=>({...e,...finals[e.slug]})).sort((a,b)=>a.start.localeCompare(b.start)||a.name.localeCompare(b.name));
 export const months=Array.from({length:12},(_,i)=>{const d=new Date(Date.UTC(2026,5+i,1));return {value:d.toISOString().slice(0,7),label:d.toLocaleDateString('en-GB',{month:'long',year:'numeric',timeZone:'UTC'}),short:d.toLocaleDateString('en-GB',{month:'short',timeZone:'UTC'})}});
 export function inMonth(e:Tournament,month:string){return month==='all'||e.start.slice(0,7)<=month&&e.end.slice(0,7)>=month;}
 export function dateLabel(date:string,year=false){return new Date(date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',...(year?{year:'numeric' as const}:{}),timeZone:'UTC'});}

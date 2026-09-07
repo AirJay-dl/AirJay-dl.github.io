@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:scottish-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261221
+SUMMARY:Scottish Open
+LOCATION:Meadowbank Sports Centre\, Edinburgh\, Scotland
+DESCRIPTION:The Scottish leg of the Home Nations series.\nChecked 5 Septe
+ mber 2026. Dates may change. One-time import\; recheck the organiser.\nS
+ ource: https://www.wst.tv/fullcalendarwithseedingcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

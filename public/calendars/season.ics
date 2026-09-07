@@ -46,6 +46,34 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:asia-pacific-q-tour-1-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260629
+SUMMARY:Asia Pacific Q Tour 1
+LOCATION:Pot Black North Perth\, Perth\, Australia
+DESCRIPTION:The opening Asia-Pacific Q Tour event of the season.\nChecked
+  5 September 2026. Dates may change. One-time import\; recheck the organ
+ iser.\nSource: https://res.snooker.org/res/index.asp?season=2026&templat
+ e=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asia-pacific-q-tour-2-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260713
+SUMMARY:Asia Pacific Q Tour 2
+LOCATION:Papatoetoe Cosmopolitan Club\, Auckland\, New Zealand
+DESCRIPTION:The second Asia-Pacific Q Tour event of the season.\nChecked 
+ 5 September 2026. Dates may change. One-time import\; recheck the organi
+ ser.\nSource: https://res.snooker.org/res/index.asp?season=2026&template
+ =2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:shenzhen-open-qualifiers-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20260719
@@ -101,6 +129,20 @@ URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:asia-pacific-q-tour-3-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260803
+SUMMARY:Asia Pacific Q Tour 3
+LOCATION:Commercial Club Albury\, Albury\, Australia
+DESCRIPTION:The third Asia-Pacific Q Tour event of the season.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://res.snooker.org/res/index.asp?season=2026&template=
+ 2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:china-open-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20260808
@@ -129,6 +171,19 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-1-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260831
+SUMMARY:Q Tour 1
+LOCATION:Northern Snooker Centre\, Leeds\, England
+DESCRIPTION:The first European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:british-open-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20260831
@@ -139,6 +194,19 @@ DESCRIPTION:The event spans August and September. It therefore appears in
   both monthly views.\nChecked 5 September 2026. Dates may change. One-ti
  me import\; recheck the organiser.\nSource: https://www.wst.tv/
 URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:uk-womens-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260907
+SUMMARY:UK Women's Championship
+LOCATION:Northern Snooker Centre\, Leeds\, England
+DESCRIPTION:A Women's World Snooker Tour ranking event.\nChecked 5 Septem
+ ber 2026. Dates may change. One-time import\; recheck the organiser.\nSo
+ urce: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -195,6 +263,19 @@ URL:https://www.wst.tv/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-2-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260925
+SUMMARY:Q Tour 2
+LOCATION:Princess Hotel\, Sofia\, Bulgaria
+DESCRIPTION:The second European Q Tour event of the season.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:shenzhen-open-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20260928
@@ -206,6 +287,33 @@ DESCRIPTION:The current WST listing says Shenzhen Open. Earlier provision
  026. Dates may change. One-time import\; recheck the organiser.\nSource:
   https://www.wst.tv/
 URL:https://www.wst.tv/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asia-pacific-q-tour-4-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261012
+SUMMARY:Asia Pacific Q Tour 4
+LOCATION:Mounties\, Sydney\, Australia
+DESCRIPTION:The fourth Asia-Pacific Q Tour event of the season.\nChecked 
+ 5 September 2026. Dates may change. One-time import\; recheck the organi
+ ser.\nSource: https://res.snooker.org/res/index.asp?season=2026&template
+ =2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:australian-womens-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261021
+SUMMARY:Australian Women's Open
+LOCATION:Mounties\, Sydney\, Australia
+DESCRIPTION:A Women's World Snooker Tour ranking event.\nChecked 5 Septem
+ ber 2026. Dates may change. One-time import\; recheck the organiser.\nSo
+ urce: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -223,6 +331,19 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-3-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261026
+SUMMARY:Q Tour 3
+LOCATION:Snooker Arena Germany\, Oberhausen\, Germany
+DESCRIPTION:The third European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:international-championship-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20261031
@@ -237,6 +358,20 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pan-american-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261109
+SUMMARY:Pan American Championship
+LOCATION:Mampituba Country Club\, Criciúma\, Brazil
+DESCRIPTION:A regional championship included in the global season listing
+ .\nChecked 5 September 2026. Dates may change. One-time import\; recheck
+  the organiser.\nSource: https://res.snooker.org/res/index.asp?season=20
+ 26&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:champion-of-champions-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -248,6 +383,19 @@ DESCRIPTION:An invitational competition with its own qualification criter
  ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
  -offs/
 URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:q-tour-4-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261116
+SUMMARY:Q Tour 4
+LOCATION:Austrian Snooker Academy\, Vienna\, Austria
+DESCRIPTION:The fourth European Q Tour event of the season.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -292,6 +440,19 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:q-tour-5-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261207
+SUMMARY:Q Tour 5
+LOCATION:Landywood Snooker Club\, Walsall\, England
+DESCRIPTION:The fifth European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:shoot-out-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20261209
@@ -333,6 +494,19 @@ URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:british-seniors-open-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261227
+DTEND;VALUE=DATE:20261229
+SUMMARY:British Seniors Open
+LOCATION:Vaillant Live\, Derby\, England
+DESCRIPTION:A World Seniors Snooker event.\nChecked 5 September 2026. Dat
+ es may change. One-time import\; recheck the organiser.\nSource: https:/
+ /res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:championship-league-group-2-2027@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20270102
@@ -369,6 +543,19 @@ LOCATION:Mattioli Arena\, Leicester\, England
 DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
  ptember 2026. Dates may change. One-time import\; recheck the organiser.
  \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:q-tour-6-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270107
+DTEND;VALUE=DATE:20270111
+SUMMARY:Q Tour 6
+LOCATION:De Pomerans Snooker\, Dochristi\, Belgium
+DESCRIPTION:The sixth European Q Tour event of the season.\nChecked 5 Sep
+ tember 2026. Dates may change. One-time import\; recheck the organiser.\
+ nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
 URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -422,6 +609,20 @@ LOCATION:Mattioli Arena\, Leicester\, England
 DESCRIPTION:Group-stage dates for the invitational edition.\nChecked 5 Se
  ptember 2026. Dates may change. One-time import\; recheck the organiser.
  \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:asia-pacific-q-tour-5-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270126
+SUMMARY:Asia Pacific Q Tour 5
+LOCATION:Redcliffe Snooker Club\, Brisbane\, Australia
+DESCRIPTION:The fifth Asia-Pacific Q Tour event of the season.\nChecked 5
+  September 2026. Dates may change. One-time import\; recheck the organis
+ er.\nSource: https://res.snooker.org/res/index.asp?season=2026&template=
+ 2
 URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -492,6 +693,19 @@ DESCRIPTION:The Welsh leg of the Home Nations series.\nChecked 5 Septembe
  r 2026. Dates may change. One-time import\; recheck the organiser.\nSour
  ce: https://www.wst.tv/fullcalendarwithseedingcut-offs/
 URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:q-tour-7-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270215
+SUMMARY:Q Tour 7
+LOCATION:Ding Junhui Snooker Academy\, Sheffield\, England
+DESCRIPTION:The seventh European Q Tour event of the season.\nChecked 5 S
+ eptember 2026. Dates may change. One-time import\; recheck the organiser
+ .\nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:champion-of-champions-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261116
+SUMMARY:Champion of Champions
+LOCATION:Mattioli Arena\, Leicester\, England
+DESCRIPTION:An invitational competition with its own qualification criter
+ ia.\nChecked 5 September 2026. Dates may change. One-time import\; reche
+ ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
+ -offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

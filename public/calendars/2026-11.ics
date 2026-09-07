@@ -19,6 +19,20 @@ URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
+UID:pan-american-championship-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261109
+SUMMARY:Pan American Championship
+LOCATION:Mampituba Country Club\, Criciúma\, Brazil
+DESCRIPTION:A regional championship included in the global season listing
+ .\nChecked 5 September 2026. Dates may change. One-time import\; recheck
+  the organiser.\nSource: https://res.snooker.org/res/index.asp?season=20
+ 26&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
 UID:champion-of-champions-2026@snooker-calendar
 DTSTAMP:20260905T000000Z
 DTSTART;VALUE=DATE:20261109
@@ -30,6 +44,19 @@ DESCRIPTION:An invitational competition with its own qualification criter
  ck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedingcut
  -offs/
 URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:q-tour-4-2026@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261116
+SUMMARY:Q Tour 4
+LOCATION:Austrian Snooker Academy\, Vienna\, Austria
+DESCRIPTION:The fourth European Q Tour event of the season.\nChecked 5 Se
+ ptember 2026. Dates may change. One-time import\; recheck the organiser.
+ \nSource: https://res.snooker.org/res/index.asp?season=2026&template=2
+URL:https://res.snooker.org/res/index.asp?season=2026&template=2
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT

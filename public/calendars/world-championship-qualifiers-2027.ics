@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Snooker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Snooker Calendar
+BEGIN:VEVENT
+UID:world-championship-qualifiers-2027@snooker-calendar
+DTSTAMP:20260905T000000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270415
+SUMMARY:World Championship qualifiers
+LOCATION:English Institute of Sport\, Sheffield\, England
+DESCRIPTION:Qualifying is held at a different venue from the Crucible mai
+ n event.\nChecked 5 September 2026. Dates may change. One-time import\; 
+ recheck the organiser.\nSource: https://www.wst.tv/fullcalendarwithseedi
+ ngcut-offs/
+URL:https://www.wst.tv/fullcalendarwithseedingcut-offs/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
