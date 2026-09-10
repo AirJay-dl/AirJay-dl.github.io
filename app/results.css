@@ -1,0 +1,9 @@
+.season-brief .event-update{color:#d4efa6!important;font-size:12px!important;letter-spacing:.7px;text-transform:uppercase}
+.match-list{border-top:1px solid var(--border);margin:20px 0}
+.match-row{display:grid;grid-template-columns:110px minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--border);font-size:14px}
+.match-row>span:first-child{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#607161}
+.match-score{font-weight:700;white-space:nowrap;text-align:center}
+.match-player:last-of-type{text-align:right}
+.scheduled-match{grid-template-columns:110px minmax(0,1fr) minmax(0,1fr)}
+.scheduled-match time{font-size:12px;color:#607161;grid-column:2 / -1}
+@media(max-width:650px){.match-row{grid-template-columns:1fr auto 1fr;gap:8px}.match-row>span:first-child{grid-column:1 / -1}.scheduled-match{grid-template-columns:1fr 1fr}.scheduled-match time{grid-column:1 / -1}}

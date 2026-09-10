@@ -68,7 +68,9 @@ const globalEvents:Tournament[]=[
 const finals:Record<string,Pick<Tournament,'winner'|'runnerUp'|'finalScore'|'firstPrize'>>={
  'championship-league-2026':{winner:'Jak Jones',runnerUp:'David Gilbert',finalScore:'3–2',firstPrize:'£33,000'},
  'shanghai-masters-2026':{winner:'Judd Trump',runnerUp:'Kyren Wilson',finalScore:'11–6',firstPrize:'£210,000'},
- 'china-open-2026':{winner:'Mark Selby',runnerUp:'Noppon Saengkham',finalScore:'10–6',firstPrize:'£250,000'}
+ 'china-open-2026':{winner:'Mark Selby',runnerUp:'Noppon Saengkham',finalScore:'10–6',firstPrize:'£250,000'},
+ 'british-open-2026':{winner:'Jak Jones',runnerUp:'Mark Selby',finalScore:'10–6'},
+ 'uk-womens-championship-2026':{winner:'Bai Yulu',runnerUp:'Reanne Evans',finalScore:'4–1'}
 };
 export const events:Tournament[]=[...mainEvents,...globalEvents].map(e=>({...e,...finals[e.slug]})).sort((a,b)=>a.start.localeCompare(b.start)||a.name.localeCompare(b.name));
 export const months=Array.from({length:12},(_,i)=>{const d=new Date(Date.UTC(2026,5+i,1));return {value:d.toISOString().slice(0,7),label:d.toLocaleDateString('en-GB',{month:'long',year:'numeric',timeZone:'UTC'}),short:d.toLocaleDateString('en-GB',{month:'short',timeZone:'UTC'})}});

@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import Script from 'next/script';
 import './globals.css';
+import './results.css';
 import {href,absolute,jsonLd,site} from '@/lib/site';
 
 export const metadata:Metadata={title:'Snooker News, Results & 2026/27 Tournament Calendar',description:'Snooker news, tournament schedules, results, rankings, player profiles and original guides for the 2026/27 season.',icons:{icon:href('/favicon.svg')},alternates:{types:{'application/rss+xml':absolute('/feed.xml')}}};

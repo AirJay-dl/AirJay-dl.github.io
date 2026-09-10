@@ -1,12 +1,63 @@
 import Calendar from '@/components/calendar';
 import {StoryCards} from '@/components/content-cards';
-import {events,dateLabel} from '@/content/events';
-import {metadata as pageMeta,href} from '@/lib/site';
+import {events, dateLabel} from '@/content/events';
+import {tournamentUpdates} from '@/content/tournament-updates';
+import {metadata as pageMeta, href} from '@/lib/site';
 
-export const metadata=pageMeta('Snooker News, Results & 2026/27 Tournament Calendar','Snooker news, schedules, tournament results, rankings and original guides for the 2026/27 season.','/');
+export const metadata = pageMeta(
+  'Snooker News, Results & 2026/27 Tournament Calendar',
+  'Snooker news, schedules, tournament results, rankings and original guides for the 2026/27 season.',
+  '/',
+);
 
-const featuredEvent=events.find(e=>e.slug==='english-open-2026')!;
+const featuredEvent = events.find((event) => event.slug === 'english-open-2026')!;
+const featuredUpdate = tournamentUpdates[featuredEvent.slug];
 
-export default function Home(){
- return <main id="main"><section className="home-intro"><div><p className="eyebrow">THE SNOOKER CALENDAR · 2026/27</p><h1>News, results and<br/><em>the season ahead.</em></h1><p className="lede">Independent snooker coverage, the complete tournament calendar and practical guides for following the game.</p><nav className="home-jump" aria-label="Homepage sections"><a href="#top-stories">Top stories</a><a href="#on-tour">On tour</a><a href="#calendar">Calendar</a><a href="#guides">Guides</a></nav></div><aside className="season-brief"><p className="eyebrow">THIS WEEK ON TOUR</p><h2>{featuredEvent.name}</h2><p>{dateLabel(featuredEvent.start,true)} – {dateLabel(featuredEvent.end,true)}<br/>{featuredEvent.city}, {featuredEvent.country}</p><a className="text-link" href={href(`/tournaments/${featuredEvent.slug}/`)}>Schedule, draw & results ↗</a></aside></section><section id="top-stories" className="editorial-section"><div className="section-bar"><div><p className="eyebrow">THE DESK</p><h2>Top stories</h2></div><a href={href('/news/')}>All news ↗</a></div><StoryCards category="News"/></section><section id="on-tour" className="tour-overview"><div><p className="eyebrow">ON TOUR & THROUGH THE SEASON</p><h2>Every tournament in one place.</h2><p>Browse main-tour events, qualifiers, Q Tour, women’s, seniors and selected international championships by month, tour, type or location.</p><a className="action-link" href={href('/calendar/season/')}>Explore the full calendar</a></div><div className="tour-facts"><div><strong>58</strong><span>events listed</span></div><div><strong>6</strong><span>tour categories</span></div><div><strong>12</strong><span>month views</span></div></div></section><section id="calendar" className="calendar-section"><div className="section-bar"><div><p className="eyebrow">SCHEDULE & RESULTS</p><h2>The 2026/27 snooker season</h2></div><a href={href('/calendar/season/')}>Full season view ↗</a></div><Calendar/></section><section id="guides" className="editorial-section"><div className="section-bar"><div><p className="eyebrow">GUIDES & CULTURE</p><h2>Beyond the scoreline</h2></div><a href={href('/stories/')}>All guides ↗</a></div><StoryCards category="Guide"/></section><section className="data-strip"><div><p className="eyebrow">THE DATA DESK</p><h2>Rankings, match records<br/>and player context.</h2></div><div><a href={href('/rankings/')}>World rankings ↗</a><a href={href('/stats/')}>Match statistics ↗</a><a href={href('/players/')}>Player profiles ↗</a></div></section></main>
+export default function Home() {
+  return (
+    <main id="main">
+      <section className="home-intro">
+        <div>
+          <p className="eyebrow">THE SNOOKER CALENDAR · 2026/27</p>
+          <h1>News, results and<br/><em>the season ahead.</em></h1>
+          <p className="lede">Independent snooker coverage, the complete tournament calendar and practical guides for following the game.</p>
+          <nav className="home-jump" aria-label="Homepage sections">
+            <a href="#top-stories">Top stories</a><a href="#on-tour">On tour</a><a href="#calendar">Calendar</a><a href="#guides">Guides</a>
+          </nav>
+        </div>
+        <aside className="season-brief">
+          <p className="eyebrow">THIS WEEK ON TOUR</p>
+          <h2>{featuredEvent.name}</h2>
+          <p>{dateLabel(featuredEvent.start, true)} – {dateLabel(featuredEvent.end, true)}<br/>{featuredEvent.city}, {featuredEvent.country}</p>
+          {featuredUpdate && <p className="event-update">{featuredUpdate.status} · verified {featuredUpdate.checked}</p>}
+          <a className="text-link" href={href(`/tournaments/${featuredEvent.slug}/`)}>Schedule, draw & results ↗</a>
+        </aside>
+      </section>
+
+      <section id="top-stories" className="editorial-section">
+        <div className="section-bar"><div><p className="eyebrow">THE DESK</p><h2>Top stories</h2></div><a href={href('/news/')}>All news ↗</a></div>
+        <StoryCards category="News"/>
+      </section>
+
+      <section id="on-tour" className="tour-overview">
+        <div><p className="eyebrow">ON TOUR & THROUGH THE SEASON</p><h2>Every tournament in one place.</h2><p>Browse main-tour events, qualifiers, Q Tour, women’s, seniors and selected international championships by month, tour, type or location.</p><a className="action-link" href={href('/calendar/season/')}>Explore the full calendar</a></div>
+        <div className="tour-facts"><div><strong>58</strong><span>events listed</span></div><div><strong>6</strong><span>tour categories</span></div><div><strong>12</strong><span>month views</span></div></div>
+      </section>
+
+      <section id="calendar" className="calendar-section">
+        <div className="section-bar"><div><p className="eyebrow">SCHEDULE & RESULTS</p><h2>The 2026/27 snooker season</h2></div><a href={href('/calendar/season/')}>Full season view ↗</a></div>
+        <Calendar/>
+      </section>
+
+      <section id="guides" className="editorial-section">
+        <div className="section-bar"><div><p className="eyebrow">GUIDES & CULTURE</p><h2>Beyond the scoreline</h2></div><a href={href('/stories/')}>All guides ↗</a></div>
+        <StoryCards category="Guide"/>
+      </section>
+
+      <section className="data-strip">
+        <div><p className="eyebrow">THE DATA DESK</p><h2>Rankings, match records<br/>and player context.</h2></div>
+        <div><a href={href('/rankings/')}>World rankings ↗</a><a href={href('/stats/')}>Match statistics ↗</a><a href={href('/players/')}>Player profiles ↗</a></div>
+      </section>
+    </main>
+  );
 }
