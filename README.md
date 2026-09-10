@@ -4,7 +4,7 @@ Independent English-language snooker calendar and editorial website for the 2026
 
 ## Stack and use
 
-React 19, TypeScript, Vinext, Tailwind, the supplied Shadcn/Base UI primitives. Static HTML export for GitHub Pages, with a Sites-compatible packaging manifest. Google Analytics loads only after the visitor accepts analytics cookies.
+React 19, TypeScript, Vinext, Tailwind, the supplied Shadcn/Base UI primitives. Static HTML export for GitHub Pages, with a Sites-compatible packaging manifest. Google Analytics 4 loads on every page using the configured Measurement ID.
 
 Node 24 and pnpm 11.19.0:
 
