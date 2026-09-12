@@ -1,0 +1,359 @@
+{
+  "checked": "13 September 2026",
+  "source": "https://www.wst.tv/rankings/?showLive=false",
+  "official": {
+    "label": "World Ranking List after 2026 Unibet British Open",
+    "positions": [
+      {
+        "rank": 1,
+        "name": "Zhao Xintong",
+        "slug": "zhao-xintong",
+        "country": "China",
+        "money": 1265550
+      },
+      {
+        "rank": 2,
+        "name": "Mark Selby",
+        "slug": "mark-selby",
+        "country": "England",
+        "money": 1139150
+      },
+      {
+        "rank": 3,
+        "name": "Judd Trump",
+        "slug": "judd-trump",
+        "country": "England",
+        "money": 1108350
+      },
+      {
+        "rank": 4,
+        "name": "Neil Robertson",
+        "slug": "neil-robertson",
+        "country": "Australia",
+        "money": 1098200
+      },
+      {
+        "rank": 5,
+        "name": "Wu Yize",
+        "slug": "wu-yize",
+        "country": "China",
+        "money": 1067900
+      },
+      {
+        "rank": 6,
+        "name": "John Higgins",
+        "slug": "john-higgins",
+        "country": "Scotland",
+        "money": 962000
+      },
+      {
+        "rank": 7,
+        "name": "Shaun Murphy",
+        "slug": "shaun-murphy",
+        "country": "England",
+        "money": 873000
+      },
+      {
+        "rank": 8,
+        "name": "Kyren Wilson",
+        "slug": "kyren-wilson",
+        "country": "England",
+        "money": 708100
+      },
+      {
+        "rank": 9,
+        "name": "Mark Williams",
+        "slug": "mark-williams",
+        "country": "Wales",
+        "money": 702400
+      },
+      {
+        "rank": 10,
+        "name": "Barry Hawkins",
+        "slug": "barry-hawkins",
+        "country": "England",
+        "money": 664800
+      },
+      {
+        "rank": 11,
+        "name": "Xiao Guodong",
+        "slug": "xiao-guodong",
+        "country": "China",
+        "money": 646900
+      },
+      {
+        "rank": 12,
+        "name": "Chris Wakelin",
+        "slug": "chris-wakelin",
+        "country": "England",
+        "money": 573800
+      },
+      {
+        "rank": 13,
+        "name": "Mark Allen",
+        "slug": "mark-allen",
+        "country": "Northern Ireland",
+        "money": 560550
+      },
+      {
+        "rank": 14,
+        "name": "Ronnie O'Sullivan",
+        "slug": "ronnie-osullivan",
+        "country": "England",
+        "money": 513750
+      },
+      {
+        "rank": 15,
+        "name": "Ding Junhui",
+        "slug": "ding-junhui",
+        "country": "China",
+        "money": 470850
+      },
+      {
+        "rank": 16,
+        "name": "Jack Lisowski",
+        "slug": "jack-lisowski",
+        "country": "England",
+        "money": 374100
+      },
+      {
+        "rank": 17,
+        "name": "Zhang Anda",
+        "slug": "zhang-anda",
+        "country": "China",
+        "money": 349200
+      },
+      {
+        "rank": 18,
+        "name": "Zhou Yuelong",
+        "slug": "zhou-yuelong",
+        "country": "China",
+        "money": 348900
+      },
+      {
+        "rank": 19,
+        "name": "Stuart Bingham",
+        "slug": "stuart-bingham",
+        "country": "England",
+        "money": 348300
+      },
+      {
+        "rank": 20,
+        "name": "Si Jiahui",
+        "slug": "si-jiahui",
+        "country": "China",
+        "money": 346000
+      },
+      {
+        "rank": 21,
+        "name": "Chang Bingyu",
+        "slug": "chang-bingyu",
+        "country": "China",
+        "money": 340100
+      },
+      {
+        "rank": 22,
+        "name": "Jak Jones",
+        "slug": "jak-jones",
+        "country": "Wales",
+        "money": 339300
+      },
+      {
+        "rank": 23,
+        "name": "Elliot Slessor",
+        "slug": "elliot-slessor",
+        "country": "England",
+        "money": 336700
+      },
+      {
+        "rank": 24,
+        "name": "Thepchaiya Un-Nooh",
+        "slug": "thepchaiya-un-nooh",
+        "country": "Thailand",
+        "money": 330600
+      },
+      {
+        "rank": 25,
+        "name": "Ali Carter",
+        "slug": "ali-carter",
+        "country": "England",
+        "money": 318150
+      },
+      {
+        "rank": 26,
+        "name": "Gary Wilson",
+        "slug": "gary-wilson",
+        "country": "England",
+        "money": 282800
+      },
+      {
+        "rank": 27,
+        "name": "Lei Peifan",
+        "slug": "lei-peifan",
+        "country": "China",
+        "money": 270800
+      },
+      {
+        "rank": 28,
+        "name": "Pang Junxu",
+        "slug": "pang-junxu",
+        "country": "China",
+        "money": 263500
+      },
+      {
+        "rank": 29,
+        "name": "Noppon Saengkham",
+        "slug": "noppon-saengkham",
+        "country": "Thailand",
+        "money": 253500
+      },
+      {
+        "rank": 30,
+        "name": "Hossein Vafaei",
+        "slug": "hossein-vafaei",
+        "country": "Iran",
+        "money": 245200
+      },
+      {
+        "rank": 31,
+        "name": "Joe O'Connor",
+        "slug": "joe-oconnor",
+        "country": "England",
+        "money": 236450
+      },
+      {
+        "rank": 32,
+        "name": "Stephen Maguire",
+        "slug": "stephen-maguire",
+        "country": "Scotland",
+        "money": 232200
+      },
+      {
+        "rank": 33,
+        "name": "David Gilbert",
+        "slug": "david-gilbert",
+        "country": "England",
+        "money": 224950
+      },
+      {
+        "rank": 34,
+        "name": "Yuan Sijun",
+        "slug": "yuan-sijun",
+        "country": "China",
+        "money": 217400
+      },
+      {
+        "rank": 35,
+        "name": "Tom Ford",
+        "slug": "tom-ford",
+        "country": "England",
+        "money": 196200
+      },
+      {
+        "rank": 36,
+        "name": "Jackson Page",
+        "slug": "jackson-page",
+        "country": "Wales",
+        "money": 194650
+      },
+      {
+        "rank": 37,
+        "name": "Aaron Hill",
+        "slug": "aaron-hill",
+        "country": "Ireland",
+        "money": 188500
+      },
+      {
+        "rank": 38,
+        "name": "Stan Moody",
+        "slug": "stan-moody",
+        "country": "England",
+        "money": 185200
+      },
+      {
+        "rank": 39,
+        "name": "Xu Si",
+        "slug": "xu-si",
+        "country": "China",
+        "money": 177250
+      },
+      {
+        "rank": 40,
+        "name": "Anthony McGill",
+        "slug": "anthony-mcgill",
+        "country": "Scotland",
+        "money": 177100
+      },
+      {
+        "rank": 41,
+        "name": "Luca Brecel",
+        "slug": "luca-brecel",
+        "country": "Belgium",
+        "money": 171500
+      },
+      {
+        "rank": 42,
+        "name": "Ryan Day",
+        "slug": "ryan-day",
+        "country": "Wales",
+        "money": 167250
+      },
+      {
+        "rank": 43,
+        "name": "Zak Surety",
+        "slug": "zak-surety",
+        "country": "England",
+        "money": 160300
+      },
+      {
+        "rank": 44,
+        "name": "He Guoqiang",
+        "slug": "he-guoqiang",
+        "country": "China",
+        "money": 155800
+      },
+      {
+        "rank": 45,
+        "name": "Jimmy Robertson",
+        "slug": "jimmy-robertson",
+        "country": "England",
+        "money": 149600
+      },
+      {
+        "rank": 46,
+        "name": "Michael Holt",
+        "slug": "michael-holt",
+        "country": "England",
+        "money": 148750
+      },
+      {
+        "rank": 47,
+        "name": "Ben Woollaston",
+        "slug": "ben-woollaston",
+        "country": "England",
+        "money": 144500
+      },
+      {
+        "rank": 48,
+        "name": "Matthew Selt",
+        "slug": "matthew-selt",
+        "country": "England",
+        "money": 142750
+      },
+      {
+        "rank": 49,
+        "name": "Long Zehuang",
+        "slug": "long-zehuang",
+        "country": "China",
+        "money": 141850
+      },
+      {
+        "rank": 50,
+        "name": "Daniel Wells",
+        "slug": "daniel-wells",
+        "country": "Wales",
+        "money": 138300
+      }
+    ]
+  }
+}

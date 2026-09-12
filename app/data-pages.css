@@ -1,0 +1,12 @@
+.ranking-controls{display:flex;gap:8px;margin-bottom:14px}
+.ranking-controls button{border:1px solid #74917b;background:#fff;color:#173c2b;padding:10px 16px}
+.ranking-controls button.active{background:#174632;color:#fff}
+.ranking-controls button:disabled{cursor:not-allowed;opacity:.45}
+.ranking-status{display:flex;flex-wrap:wrap;gap:7px 18px;background:#e8eee6;padding:13px 16px;font-size:12px;color:#536559}
+.ranking-status strong{text-transform:uppercase;letter-spacing:1px;color:#173c2b}
+.table-wrap tbody th a{text-decoration:underline;text-decoration-color:#b9c9bc;text-underline-offset:4px}
+.initials{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.initials small{font:700 10px Arial,sans-serif;letter-spacing:1px;margin-top:4px;color:#cde69d}
+.player-facts{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1050px){.player-facts{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.ranking-status{flex-direction:column;gap:4px}.player-facts{grid-template-columns:1fr}}
