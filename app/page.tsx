@@ -1,6 +1,7 @@
 import Calendar from '@/components/calendar';
 import {StoryCards} from '@/components/content-cards';
-import {events, dateLabel} from '@/content/events';
+import {LiveScoreboard} from '@/components/live-scoreboard';
+import {events} from '@/content/events';
 import {tournamentUpdates} from '@/content/tournament-updates';
 import {metadata as pageMeta, href} from '@/lib/site';
 
@@ -12,31 +13,26 @@ export const metadata = pageMeta(
 
 const featuredEvent = events.find((event) => event.slug === 'english-open-2026')!;
 const featuredUpdate = tournamentUpdates[featuredEvent.slug];
+const scoreboardData = {...featuredUpdate, eventSlug: featuredEvent.slug, eventName: featuredEvent.name};
 
 export default function Home() {
   return (
     <main id="main">
       <section className="home-intro">
-        <div>
+        <div className="home-lead">
           <p className="eyebrow">THE SNOOKER CALENDAR · 2026/27</p>
-          <h1>News, results and<br/><em>the season ahead.</em></h1>
-          <p className="lede">Independent snooker coverage, the complete tournament calendar and practical guides for following the game.</p>
+          <h1>Snooker scores,<br/><em>results & calendar.</em></h1>
+          <p className="lede">Follow the tournament happening now, then explore every date, result and story across the 2026/27 season.</p>
           <nav className="home-jump" aria-label="Homepage sections">
             <a href="#top-stories">Top stories</a><a href="#on-tour">On tour</a><a href="#calendar">Calendar</a><a href="#guides">Guides</a>
           </nav>
         </div>
-        <aside className="season-brief">
-          <p className="eyebrow">THIS WEEK ON TOUR</p>
-          <h2>{featuredEvent.name}</h2>
-          <p>{dateLabel(featuredEvent.start, true)} – {dateLabel(featuredEvent.end, true)}<br/>{featuredEvent.city}, {featuredEvent.country}</p>
-          {featuredUpdate && <p className="event-update">{featuredUpdate.status} · verified {featuredUpdate.checked}</p>}
-          <a className="text-link" href={href(`/tournaments/${featuredEvent.slug}/`)}>Schedule, draw & results ↗</a>
-        </aside>
+        <LiveScoreboard initialData={scoreboardData}/>
       </section>
 
       <section id="top-stories" className="editorial-section">
         <div className="section-bar"><div><p className="eyebrow">THE DESK</p><h2>Top stories</h2></div><a href={href('/news/')}>All news ↗</a></div>
-        <StoryCards category="News"/>
+        <StoryCards category="News" limit={6}/>
       </section>
 
       <section id="on-tour" className="tour-overview">

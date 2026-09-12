@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "node scripts/generate-assets.mjs && vinext build && node scripts/prepare-export.mjs",
+    "update:live-score": "node scripts/update-live-score.mjs",
+    "watch:news": "node scripts/watch-news-sources.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt",

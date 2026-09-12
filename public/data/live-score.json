@@ -1,0 +1,55 @@
+{
+  "eventSlug": "english-open-2026",
+  "eventName": "English Open",
+  "checked": "12 September 2026 · 23:08 UTC+8",
+  "source": "https://www.snooker.org/res/index.asp?event=2546",
+  "sourceLabel": "Snooker.org · BetVictor English Open",
+  "status": "Semi-finals",
+  "summary": "Ali Carter is through to the final after beating Ding Junhui 6–2. Shaun Murphy and Mark J Williams contest the second semi-final.",
+  "verifiedResults": [
+    {
+      "round": "Semi-final",
+      "playerOne": "Ali Carter",
+      "score": "6–2",
+      "playerTwo": "Ding Junhui"
+    },
+    {
+      "round": "Quarter-final",
+      "playerOne": "Ding Junhui",
+      "score": "6–2",
+      "playerTwo": "Kyren Wilson"
+    },
+    {
+      "round": "Quarter-final",
+      "playerOne": "Ali Carter",
+      "score": "6–5",
+      "playerTwo": "Zhou Yuelong"
+    },
+    {
+      "round": "Quarter-final",
+      "playerOne": "Shaun Murphy",
+      "score": "6–5",
+      "playerTwo": "Judd Trump"
+    },
+    {
+      "round": "Quarter-final",
+      "playerOne": "Mark J Williams",
+      "score": "6–3",
+      "playerTwo": "Liam Davies"
+    }
+  ],
+  "upcoming": [
+    {
+      "round": "Semi-final",
+      "playerOne": "Shaun Murphy",
+      "playerTwo": "Mark J Williams",
+      "timing": "12 September · 18:00 UTC"
+    },
+    {
+      "round": "Final",
+      "playerOne": "Ali Carter",
+      "playerTwo": "Murphy / Williams winner",
+      "timing": "13 September · 12:00 & 18:00 UTC"
+    }
+  ]
+}

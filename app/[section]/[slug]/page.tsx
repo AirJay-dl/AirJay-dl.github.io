@@ -38,7 +38,7 @@ export default async function Page({params}: {params: Promise<{section: string; 
   const checkedLabel = article
     ? new Date(`${article.date}T12:00:00Z`).toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'})
     : eventUpdate?.checked || '7 September 2026';
-  const checkedDate = article?.date || '2026-09-11';
+  const checkedDate = article?.date || '2026-09-12';
   const crumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -87,7 +87,7 @@ export default async function Page({params}: {params: Promise<{section: string; 
             <h2>Career in focus</h2><p>{player.bio}</p>
             <h2>Three milestones</h2><ul>{player.milestones.map((milestone) => <li key={milestone}>{milestone}</li>)}</ul>
             <h2>A viewing prompt</h2><p>{player.watch}</p>
-            <aside className="sources"><h2>Profile source</h2><a href={player.source}>Official player profile ↗</a><p>Biography and viewing guidance are original editorial work. Structured season results and head-to-head records will appear after the data feed is approved.</p></aside>
+            <aside className="sources"><h2>Profile source</h2><a href={player.source}>Official player profile ↗</a><p>Biography and viewing guidance are original editorial work. Source-verified season results and head-to-head records will be added as coverage expands.</p></aside>
           </div>
         </>}
 
@@ -110,7 +110,7 @@ export default async function Page({params}: {params: Promise<{section: string; 
 
             <section id="schedule">
               <h2>Schedule</h2>
-              <p>The event window runs from <strong>{dateLabel(event.start, true)}</strong> to <strong>{dateLabel(event.end, true)}</strong> at {event.venue}, {event.city}. {eventUpdate ? 'The active-event snapshot below is a daily checked update, not a live score feed.' : 'Session-level order of play will be added through the approved data feed. Always check the source before travel.'}</p>
+              <p>{event.winner ? 'The tournament ran' : 'The event window runs'} from <strong>{dateLabel(event.start, true)}</strong> to <strong>{dateLabel(event.end, true)}</strong> at {event.venue}, {event.city}. {event.winner ? `The final result is confirmed below.` : eventUpdate ? 'The score snapshot below is checked against the linked source and carries its latest verification time.' : 'Session times can change, so check the linked organiser or data source before travelling.'}</p>
             </section>
 
             <section id="draw">
@@ -119,18 +119,21 @@ export default async function Page({params}: {params: Promise<{section: string; 
                 <div className="data-status"><strong>{eventUpdate.status}</strong><p>{eventUpdate.summary}</p></div>
                 <h3>Verified progression</h3>
                 <div className="match-list">{eventUpdate.verifiedResults.map((match) => <div className="match-row" key={`${match.round}-${match.playerOne}`}><span>{match.round}</span><span className="match-player">{match.playerOne}</span><strong className="match-score">{match.score}</strong><span className="match-player">{match.playerTwo}</span></div>)}</div>
-                <h3>Next-round pairings shown by the source</h3>
-                <div className="match-list">{eventUpdate.upcoming.map((match) => <div className="match-row scheduled-match" key={`${match.playerOne}-${match.playerTwo}`}><span>{match.round}</span><span className="match-player">{match.playerOne}</span><span className="match-player">{match.playerTwo}</span><time>{match.timing}</time></div>)}</div>
-              </> : <div className="data-status"><strong>Draw data pending</strong><p>The page structure is ready. The complete draw will appear after Snooker.org API access is approved, so player pairings are not copied manually or presented as live.</p></div>}
+                {eventUpdate.upcoming.length ? <><h3>Next-round pairings shown by the source</h3>
+                <div className="match-list">{eventUpdate.upcoming.map((match) => <div className="match-row scheduled-match" key={`${match.playerOne}-${match.playerTwo}`}><span>{match.round}</span><span className="match-player">{match.playerOne}</span><span className="match-player">{match.playerTwo}</span><time>{match.timing}</time></div>)}</div></> : null}
+              </> : event.winner ? <>
+                <div className="data-status"><strong>Tournament complete</strong><p>{event.winner} defeated {event.runnerUp} {event.finalScore} in the final. Earlier-round draw details remain available from the linked data source.</p></div>
+                <div className="match-list"><div className="match-row"><span>Final</span><span className="match-player">{event.winner}</span><strong className="match-score">{event.finalScore}</strong><span className="match-player">{event.runnerUp}</span></div></div>
+              </> : <div className="data-status"><strong>Draw not yet available here</strong><p>Pairings will be added after the source publishes a confirmed draw. Use the linked source for the latest organiser information.</p></div>}
             </section>
 
             <section id="results">
               <h2>Results</h2>
-              {event.winner ? <div className="result-card"><span>Final</span><strong>{event.winner} {event.finalScore} {event.runnerUp}</strong>{event.firstPrize && <p>Winner’s prize: {event.firstPrize}</p>}</div> : eventUpdate ? <div className="data-status"><strong>Daily verified snapshot</strong><p>Completed scores are shown in the draw above. The next scheduled check replaces this snapshot only when the source confirms new information.</p></div> : <div className="data-status"><strong>{new Date(event.end + 'T23:59:59Z') < new Date('2026-09-11T00:00:00Z') ? 'Result awaiting verification' : 'Results will appear after play begins'}</strong><p>Verified scores will be added through the authorised feed or a dated manual update. This page does not infer results from an event’s scheduled dates.</p></div>}
+              {event.winner ? <div className="result-card"><span>Final</span><strong>{event.winner} {event.finalScore} {event.runnerUp}</strong>{event.firstPrize && <p>Winner’s prize: {event.firstPrize}</p>}</div> : eventUpdate ? <div className="data-status"><strong>Latest verified scores</strong><p>Completed scores are shown in the draw above. During active play, a newer result appears only after the source confirms it.</p></div> : <div className="data-status"><strong>{new Date(event.end + 'T23:59:59Z') < new Date('2026-09-12T00:00:00Z') ? 'Result awaiting verification' : 'Results will appear after play begins'}</strong><p>Confirmed scores will be added after the source publishes them. This page does not infer results from scheduled dates.</p></div>}
             </section>
 
             <h2>Save the dates</h2><p><a className="action-link" href={href(`/calendars/${event.slug}.ics`)} download>↓ Download this event (.ics)</a></p>
-            <aside className="sources"><h2>Data source</h2><p><strong>Data source: <a href={eventUpdate?.source || event.source}>{eventUpdate?.sourceLabel || 'Snooker.org'} ↗</a></strong></p><p>Checked {eventUpdate?.checked || '7 September 2026'}. Dates and venues are a dated snapshot. Session times, draws and results may change.</p></aside>
+            <aside className="sources"><h2>Data source</h2><p><strong>Data source: <a href={eventUpdate?.source || event.source}>{eventUpdate?.sourceLabel || 'Snooker.org'} ↗</a></strong></p><p>Checked {eventUpdate?.checked || '12 September 2026'}. Dates and venues are a dated snapshot. Session times, draws and results may change.</p></aside>
           </div>
         </>}
 
