@@ -2,6 +2,7 @@
 .match-list{border-top:1px solid var(--border);margin:20px 0}
 .match-row{display:grid;grid-template-columns:110px minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--border);font-size:14px}
 .match-row>span:first-child{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:#607161}
+.live-result-status{border-left-color:#78a836}.live-match-row{background:#f4f8ee;padding-left:12px;padding-right:12px}.live-result-source{font-size:13px;color:#607161}.live-result-source a{text-decoration:underline;text-underline-offset:3px}
 .match-score{font-weight:700;white-space:nowrap;text-align:center}
 .match-player:last-of-type{text-align:right}
 .scheduled-match{grid-template-columns:110px minmax(0,1fr) minmax(0,1fr)}

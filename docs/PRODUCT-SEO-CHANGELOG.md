@@ -1,0 +1,41 @@
+# 产品、内容与 SEO 更新记录
+
+这个记录用于把网站改动与 Search Console、GA4 的后续变化对应起来。每次上线按“一项可解释的改动一行”记录；同一天的大型发布可以使用同一个 Release ID。
+
+## 记录规则
+
+- 上线前记录 28 天基线，上线后分别观察 7、28 和 56 天；比较时优先使用同比上一周期，并注明赛事热度、排名赛进行中等外部影响。
+- SEO 页面改动至少记录目标查询、目标网址、搜索意图和主要内链变化。
+- 不根据一两天数据判断结果。Google Search Console 数据有延迟，GA4 用于行为趋势，Search Console 用于搜索曝光、点击、CTR 和平均排名。
+- 大型改版、内容发布和技术修复分开记录，避免无法判断是哪项改动造成变化。
+- 发布后不修改原始基线；后续结论追加到同一行的观察字段。
+
+## 核心字段
+
+| 字段 | 用途 |
+| --- | --- |
+| Release ID | 将同一次发布的改动关联起来，例如 `2026-09-R02` |
+| 状态与日期 | Planned、Live、Rolled back，以及实际上线日期 |
+| 页面/模板 | 受影响的网址或页面类型 |
+| 改动与假设 | 改了什么、为什么预计会改善用户或搜索表现 |
+| 目标查询 | 这项内容要覆盖的主要搜索需求 |
+| 28 天基线 | GSC 点击、曝光、CTR、平均排名；GA4 自然搜索用户、参与率 |
+| 7/28/56 天结果 | 与基线和上一周期比较后的数据 |
+| 外部因素 | 赛事开始、球员夺冠、媒体热点、抓取或服务中断 |
+| 结论与下一步 | Keep、Iterate、Revert，以及下一项动作 |
+
+## 下一轮更新清单
+
+| Release ID | 状态 | 页面/模板 | 改动与假设 | 目标查询 | 上线日期 | 结果与结论 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Next-R01 | Planned | 球员页、排名页 | 将 `Ranking Money` 明确为 `Two-year ranking money`，增加滚动排名奖金释义，减少用户误解 | snooker ranking money; how snooker rankings work | — | — |
+| Next-R01 | Planned | Guides | 新增 `How Do Snooker World Rankings Work?`，并与排名榜、球员页和赛事页互链 | how do snooker rankings work; snooker world ranking system | — | — |
+| Next-R01 | Planned | Guides | 建立 Getting Started、Rankings & Tournaments、Watching Snooker、History & Terminology 四类常识内容 | snooker rules; snooker scoring; 147 break; best of 11 frames | — | — |
+| Architecture-I18N | Planned | 全站与未来数据库 | 保留英文根目录，为 `/zh/`、翻译关系、hreflang 和语言字段做好架构准备 | 中文与其他语言需求待 GSC 验证 | — | — |
+
+## 每次发布后的采集方法
+
+1. 在 Search Console 导出目标页面和查询的最近 28 天数据。
+2. 在 GA4 记录自然搜索用户、落地页浏览、参与率和关键事件。
+3. 7 天只检查收录、跟踪和严重异常；28 天做第一次判断；56 天确认趋势。
+4. 对赛事型页面同时记录赛事是否正在进行，避免把赛程周期造成的流量变化归因于页面修改。

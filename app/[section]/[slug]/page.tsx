@@ -3,6 +3,7 @@ import {articles} from '@/content/articles';
 import {players} from '@/content/players';
 import {events, dateLabel} from '@/content/events';
 import {tournamentUpdates} from '@/content/tournament-updates';
+import {TournamentLiveResults} from '@/components/tournament-live-results';
 import {metadata as pageMeta, href, absolute, jsonLd, site} from '@/lib/site';
 
 export function generateStaticParams() {
@@ -113,15 +114,9 @@ export default async function Page({params}: {params: Promise<{section: string; 
               <p>{event.winner ? 'The tournament ran' : 'The event window runs'} from <strong>{dateLabel(event.start, true)}</strong> to <strong>{dateLabel(event.end, true)}</strong> at {event.venue}, {event.city}. {event.winner ? `The final result is confirmed below.` : eventUpdate ? 'The score snapshot below is checked against the linked source and carries its latest verification time.' : 'Session times can change, so check the linked organiser or data source before travelling.'}</p>
             </section>
 
-            <section id="draw">
+            {eventUpdate ? <TournamentLiveResults eventSlug={event.slug} initialData={eventUpdate}/> : <><section id="draw">
               <h2>Draw</h2>
-              {eventUpdate ? <>
-                <div className="data-status"><strong>{eventUpdate.status}</strong><p>{eventUpdate.summary}</p></div>
-                <h3>Verified progression</h3>
-                <div className="match-list">{eventUpdate.verifiedResults.map((match) => <div className="match-row" key={`${match.round}-${match.playerOne}`}><span>{match.round}</span><span className="match-player">{match.playerOne}</span><strong className="match-score">{match.score}</strong><span className="match-player">{match.playerTwo}</span></div>)}</div>
-                {eventUpdate.upcoming.length ? <><h3>Next-round pairings shown by the source</h3>
-                <div className="match-list">{eventUpdate.upcoming.map((match) => <div className="match-row scheduled-match" key={`${match.playerOne}-${match.playerTwo}`}><span>{match.round}</span><span className="match-player">{match.playerOne}</span><span className="match-player">{match.playerTwo}</span><time>{match.timing}</time></div>)}</div></> : null}
-              </> : event.winner ? <>
+              {event.winner ? <>
                 <div className="data-status"><strong>Tournament complete</strong><p>{event.winner} defeated {event.runnerUp} {event.finalScore} in the final. Earlier-round draw details remain available from the linked data source.</p></div>
                 <div className="match-list"><div className="match-row"><span>Final</span><span className="match-player">{event.winner}</span><strong className="match-score">{event.finalScore}</strong><span className="match-player">{event.runnerUp}</span></div></div>
               </> : <div className="data-status"><strong>Draw not yet available here</strong><p>Pairings will be added after the source publishes a confirmed draw. Use the linked source for the latest organiser information.</p></div>}
@@ -129,8 +124,9 @@ export default async function Page({params}: {params: Promise<{section: string; 
 
             <section id="results">
               <h2>Results</h2>
-              {event.winner ? <div className="result-card"><span>Final</span><strong>{event.winner} {event.finalScore} {event.runnerUp}</strong>{event.firstPrize && <p>Winner’s prize: {event.firstPrize}</p>}</div> : eventUpdate ? <div className="data-status"><strong>Latest verified scores</strong><p>Completed scores are shown in the draw above. During active play, a newer result appears only after the source confirms it.</p></div> : <div className="data-status"><strong>{new Date(event.end + 'T23:59:59Z') < new Date('2026-09-12T00:00:00Z') ? 'Result awaiting verification' : 'Results will appear after play begins'}</strong><p>Confirmed scores will be added after the source publishes them. This page does not infer results from scheduled dates.</p></div>}
+              {event.winner ? <div className="result-card"><span>Final</span><strong>{event.winner} {event.finalScore} {event.runnerUp}</strong>{event.firstPrize && <p>Winner’s prize: {event.firstPrize}</p>}</div> : <div className="data-status"><strong>{new Date(event.end + 'T23:59:59Z') < new Date('2026-09-12T00:00:00Z') ? 'Result awaiting verification' : 'Results will appear after play begins'}</strong><p>Confirmed scores will be added after the source publishes them. This page does not infer results from scheduled dates.</p></div>}
             </section>
+            </>}
 
             <h2>Save the dates</h2><p><a className="action-link" href={href(`/calendars/${event.slug}.ics`)} download>↓ Download this event (.ics)</a></p>
             <aside className="sources"><h2>Data source</h2><p><strong>Data source: <a href={eventUpdate?.source || event.source}>{eventUpdate?.sourceLabel || 'Snooker.org'} ↗</a></strong></p><p>Checked {eventUpdate?.checked || '12 September 2026'}. Dates and venues are a dated snapshot. Session times, draws and results may change.</p></aside>
