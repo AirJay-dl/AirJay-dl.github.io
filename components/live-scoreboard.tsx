@@ -19,7 +19,7 @@ export function LiveScoreboard({initialData}: {initialData: LiveScoreData}) {
         const response = await fetch(href('/data/live-score.json'), {cache: 'no-store'});
         if (!response.ok) return;
         const next = await response.json() as LiveScoreData;
-        if (active && next.eventSlug === initialData.eventSlug) setData(next);
+        if (active) setData(next);
       } catch {
         // Keep the last verified snapshot when the update endpoint is unavailable.
       }
@@ -30,7 +30,7 @@ export function LiveScoreboard({initialData}: {initialData: LiveScoreData}) {
       active = false;
       window.clearInterval(timer);
     };
-  }, [initialData.eventSlug]);
+  }, []);
 
   const headlineResults = data.verifiedResults.slice(0, 3);
   const nextMatch = data.upcoming[0];

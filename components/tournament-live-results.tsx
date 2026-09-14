@@ -9,8 +9,8 @@ type LiveTournamentUpdate = TournamentUpdate & {
   eventName?: string;
 };
 
-export function TournamentLiveResults({eventSlug, initialData}: {eventSlug: string; initialData: TournamentUpdate}) {
-  const [data, setData] = useState<TournamentUpdate>(initialData);
+export function TournamentLiveResults({eventSlug, initialData}: {eventSlug: string; initialData?: TournamentUpdate}) {
+  const [data, setData] = useState<TournamentUpdate | null>(initialData || null);
 
   useEffect(() => {
     let active = true;
@@ -32,6 +32,11 @@ export function TournamentLiveResults({eventSlug, initialData}: {eventSlug: stri
       window.clearInterval(timer);
     };
   }, [eventSlug]);
+
+  if (!data) return <>
+    <section id="draw"><h2>Draw</h2><div className="data-status"><strong>Draw not yet available here</strong><p>This page checks the active-event feed when it loads. Use the linked source for the latest confirmed pairings.</p></div></section>
+    <section id="results"><h2>Results</h2><div className="data-status"><strong>Results will appear after play begins</strong><p>Confirmed scores will appear here automatically while this is the active event.</p></div></section>
+  </>;
 
   const liveMatches = data.liveMatches || [];
 

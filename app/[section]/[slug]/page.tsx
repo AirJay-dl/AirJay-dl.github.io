@@ -114,7 +114,7 @@ export default async function Page({params}: {params: Promise<{section: string; 
               <p>{event.winner ? 'The tournament ran' : 'The event window runs'} from <strong>{dateLabel(event.start, true)}</strong> to <strong>{dateLabel(event.end, true)}</strong> at {event.venue}, {event.city}. {event.winner ? `The final result is confirmed below.` : eventUpdate ? 'The score snapshot below is checked against the linked source and carries its latest verification time.' : 'Session times can change, so check the linked organiser or data source before travelling.'}</p>
             </section>
 
-            {eventUpdate ? <TournamentLiveResults eventSlug={event.slug} initialData={eventUpdate}/> : <><section id="draw">
+            {!event.winner ? <TournamentLiveResults eventSlug={event.slug} initialData={eventUpdate}/> : <><section id="draw">
               <h2>Draw</h2>
               {event.winner ? <>
                 <div className="data-status"><strong>Tournament complete</strong><p>{event.winner} defeated {event.runnerUp} {event.finalScore} in the final. Earlier-round draw details remain available from the linked data source.</p></div>

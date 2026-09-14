@@ -4,7 +4,7 @@ The live scoreboard and editorial watch use two deliberately separate jobs.
 
 ## Score data
 
-During an active tournament, `scripts/update-live-score.mjs` checks the configured event page every 15 minutes. It publishes only completed matches, clearly labels partial scores as in progress, validates the event page before writing, and replaces `data/live-score.json` atomically. A failed source check leaves the last successful snapshot in place.
+Every 15 minutes, `scripts/update-live-score.mjs` reads the current-season Snooker.org calendar, selects the active event (with a main ranking event taking priority when dates overlap), follows its event page, and switches the published event automatically. It publishes completed matches, clearly labels partial scores as in progress, validates the event page before writing, and replaces `data/live-score.json` atomically. When no event is active it previews the next scheduled event. A failed source check leaves the last successful snapshot in place.
 
 The homepage loads the static verified snapshot first, then refreshes the small JSON file in the browser. This keeps the page fast and indexable while allowing the score panel to become fresher without rebuilding the whole site.
 
@@ -26,4 +26,4 @@ The current fallback reads the public English Open results page with an identify
 17 */2 * * * /usr/bin/node /srv/snookercalendar/automation/watch-news-sources.mjs >> /srv/snookercalendar/automation/news-watch.log 2>&1
 ```
 
-Outside the configured event window, the score task exits before making a network request. Update the event configuration when the featured tournament changes.
+The score task uses one calendar request and one event request per run. Event IDs, active dates and round names are discovered from the source instead of being changed manually between tournaments.
