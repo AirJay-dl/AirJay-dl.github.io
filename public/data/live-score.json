@@ -1,55 +1,237 @@
 {
-  "eventSlug": "english-open-2026",
-  "eventName": "English Open",
-  "checked": "12 September 2026 · 23:08 UTC+8",
-  "source": "https://www.snooker.org/res/index.asp?event=2546",
-  "sourceLabel": "Snooker.org · BetVictor English Open",
-  "status": "Semi-finals",
-  "summary": "Ali Carter is through to the final after beating Ding Junhui 6–2. Shaun Murphy and Mark J Williams contest the second semi-final.",
+  "eventSlug": "northern-ireland-open-qualifiers-2026",
+  "eventName": "Northern Ireland Open Qualifiers",
+  "checked": "15 Sept 2026 · 14:00 UTC",
+  "source": "https://www.snooker.org/res/index.asp?event=2770",
+  "sourceLabel": "Snooker.org · Northern Ireland Open Qualifiers",
+  "status": "Match in progress",
+  "summary": "Scores are checked against the linked source. In-play figures may trail the table by up to 15 minutes.",
   "verifiedResults": [
     {
-      "round": "Semi-final",
-      "playerOne": "Ali Carter",
-      "score": "6–2",
-      "playerTwo": "Ding Junhui"
+      "round": "Qualifying round 2",
+      "playerOne": "Huang Jiahao",
+      "score": "4–2",
+      "playerTwo": "Liu Hongyu"
     },
     {
-      "round": "Quarter-final",
-      "playerOne": "Ding Junhui",
-      "score": "6–2",
-      "playerTwo": "Kyren Wilson"
+      "round": "Qualifying round 2",
+      "playerOne": "Anthony McGill",
+      "score": "4–1",
+      "playerTwo": "Liu Yang"
     },
     {
-      "round": "Quarter-final",
-      "playerOne": "Ali Carter",
-      "score": "6–5",
-      "playerTwo": "Zhou Yuelong"
+      "round": "Qualifying round 2",
+      "playerOne": "Wang Xinbo",
+      "score": "4–1",
+      "playerTwo": "David Lilley"
     },
     {
-      "round": "Quarter-final",
-      "playerOne": "Shaun Murphy",
-      "score": "6–5",
-      "playerTwo": "Judd Trump"
+      "round": "Qualifying round 2",
+      "playerOne": "Mateusz Baranowski",
+      "score": "4–1",
+      "playerTwo": "Yuan Sijun"
     },
     {
-      "round": "Quarter-final",
-      "playerOne": "Mark J Williams",
-      "score": "6–3",
-      "playerTwo": "Liam Davies"
+      "round": "Qualifying round 2",
+      "playerOne": "Ben Mertens",
+      "score": "4–0",
+      "playerTwo": "Iulian Boiko"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Alfie Burden",
+      "score": "4–1",
+      "playerTwo": "Jimmy Robertson"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Liam Davies",
+      "score": "4–1",
+      "playerTwo": "Fan Zhengyi"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Huang Jiahao",
+      "score": "4–1",
+      "playerTwo": "Reanne Evans"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Liu Yang",
+      "score": "4–1",
+      "playerTwo": "Connor Benzey"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Wang Xinbo",
+      "score": "4–1",
+      "playerTwo": "Liam Graham"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Mateusz Baranowski",
+      "score": "w/o",
+      "playerTwo": "Gong Chenzhi"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Ross Muir",
+      "score": "4–1",
+      "playerTwo": "Andrew Higginson"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Iulian Boiko",
+      "score": "4–3",
+      "playerTwo": "Luo Zetao"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Alfie Burden",
+      "score": "4–1",
+      "playerTwo": "Fergal Quinn"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Liam Davies",
+      "score": "4–3",
+      "playerTwo": "Hammad Miah"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Louis Heathcote",
+      "score": "4–2",
+      "playerTwo": "Craig Steadman"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Antoni Kowalski",
+      "score": "4–1",
+      "playerTwo": "Oliver Brown"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Sam Craigie",
+      "score": "4–1",
+      "playerTwo": "Anton Kazakov"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Jimmy White",
+      "score": "4–1",
+      "playerTwo": "Sean O'Sullivan"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Zhao Hanyang",
+      "score": "4–2",
+      "playerTwo": "Mahmoud El Hareedy"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Xu Yichen",
+      "score": "4–2",
+      "playerTwo": "Mina Awad"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Marco Fu",
+      "score": "4–0",
+      "playerTwo": "Joel Connolly"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Ian Burns",
+      "score": "4–0",
+      "playerTwo": "Stuart Carrington"
+    },
+    {
+      "round": "Qualifying round 1",
+      "playerOne": "Gao Yang",
+      "score": "4–0",
+      "playerTwo": "Panchaya Channoi"
+    }
+  ],
+  "liveMatches": [
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Aaron Hill",
+      "score": "2–1",
+      "playerTwo": "Ross Muir"
     }
   ],
   "upcoming": [
     {
-      "round": "Semi-final",
-      "playerOne": "Shaun Murphy",
-      "playerTwo": "Mark J Williams",
-      "timing": "12 September · 18:00 UTC"
+      "round": "Qualifying round 2",
+      "playerOne": "Lyu Haotian",
+      "playerTwo": "Louis Heathcote",
+      "timing": "15 Sept, 15:00 UTC"
     },
     {
-      "round": "Final",
-      "playerOne": "Ali Carter",
-      "playerTwo": "Murphy / Williams winner",
-      "timing": "13 September · 12:00 & 18:00 UTC"
+      "round": "Qualifying round 2",
+      "playerOne": "Matthew Selt",
+      "playerTwo": "Antoni Kowalski",
+      "timing": "15 Sept, 15:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Ishpreet Singh Chadha",
+      "playerTwo": "Sam Craigie",
+      "timing": "15 Sept, 15:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Xu Si",
+      "playerTwo": "Jimmy White",
+      "timing": "15 Sept, 15:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "He Guoqiang",
+      "playerTwo": "Zhao Hanyang",
+      "timing": "15 Sept, 18:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Jamie Jones",
+      "playerTwo": "Xu Yichen",
+      "timing": "15 Sept, 18:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Matthew Stevens",
+      "playerTwo": "Marco Fu",
+      "timing": "15 Sept, 18:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Ricky Walden",
+      "playerTwo": "Ian Burns",
+      "timing": "15 Sept, 18:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Long Zehuang",
+      "playerTwo": "Gao Yang",
+      "timing": "16 Sept, 09:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Zak Surety",
+      "playerTwo": "Oliver Sykes",
+      "timing": "16 Sept, 09:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Oliver Lines",
+      "playerTwo": "Cheung Ka Wai",
+      "timing": "16 Sept, 09:00 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Stan Moody",
+      "playerTwo": "Yao Pengcheng",
+      "timing": "16 Sept, 09:00 UTC"
     }
   ]
 }

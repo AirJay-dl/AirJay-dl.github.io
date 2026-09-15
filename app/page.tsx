@@ -1,8 +1,8 @@
 import Calendar from '@/components/calendar';
 import {StoryCards} from '@/components/content-cards';
 import {LiveScoreboard} from '@/components/live-scoreboard';
-import {events} from '@/content/events';
-import {tournamentUpdates} from '@/content/tournament-updates';
+import type {TournamentUpdate} from '@/content/tournament-updates';
+import liveScoreSnapshot from '@/public/data/live-score.json';
 import {metadata as pageMeta, href} from '@/lib/site';
 
 export const metadata = pageMeta(
@@ -11,9 +11,7 @@ export const metadata = pageMeta(
   '/',
 );
 
-const featuredEvent = events.find((event) => event.slug === 'english-open-2026')!;
-const featuredUpdate = tournamentUpdates[featuredEvent.slug];
-const scoreboardData = {...featuredUpdate, eventSlug: featuredEvent.slug, eventName: featuredEvent.name};
+const scoreboardData = liveScoreSnapshot as TournamentUpdate&{eventSlug:string;eventName:string};
 
 export default function Home() {
   return (
@@ -24,7 +22,7 @@ export default function Home() {
           <h1>Snooker scores,<br/><em>results & calendar.</em></h1>
           <p className="lede">Follow the tournament happening now, then explore every date, result and story across the 2026/27 season.</p>
           <nav className="home-jump" aria-label="Homepage sections">
-            <a href="#top-stories">Top stories</a><a href="#on-tour">On tour</a><a href="#calendar">Calendar</a><a href="#guides">Guides</a>
+            <a href={href('/results/')}>Latest results</a><a href="#top-stories">Top stories</a><a href="#calendar">Calendar</a><a href="#guides">Guides</a>
           </nav>
         </div>
         <LiveScoreboard initialData={scoreboardData}/>
@@ -52,7 +50,7 @@ export default function Home() {
 
       <section className="data-strip">
         <div><p className="eyebrow">THE DATA DESK</p><h2>Rankings, match records<br/>and player context.</h2></div>
-        <div><a href={href('/rankings/')}>World rankings ↗</a><a href={href('/stats/')}>Match statistics ↗</a><a href={href('/players/')}>Player profiles ↗</a></div>
+        <div><a href={href('/results/')}>Latest results ↗</a><a href={href('/rankings/')}>World rankings ↗</a><a href={href('/stats/')}>Match statistics ↗</a><a href={href('/players/')}>Player profiles ↗</a></div>
       </section>
     </main>
   );

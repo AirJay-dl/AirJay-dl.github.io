@@ -1,4 +1,4 @@
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {existsSync,mkdirSync,readFileSync,writeFileSync} from 'node:fs';
 import {events,months,inMonth} from '../content/events.ts';
 import {articles} from '../content/articles.ts';
 import {players} from '../content/players.ts';
@@ -12,10 +12,10 @@ const ics=rows=>['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//The Snooker Calendar
 mkdirSync('public/calendars',{recursive:true});
 mkdirSync('public/data',{recursive:true});
 writeFileSync('public/calendars/season.ics',ics(events));for(const m of months)writeFileSync(`public/calendars/${m.value}.ics`,ics(events.filter(e=>inMonth(e,m.value))));for(const e of events)writeFileSync(`public/calendars/${e.slug}.ics`,ics([e]));
-const liveEvent=events.find(e=>e.slug==='english-open-2026');const liveUpdate=tournamentUpdates['english-open-2026'];writeFileSync('public/data/live-score.json',JSON.stringify({eventSlug:liveEvent.slug,eventName:liveEvent.name,...liveUpdate},null,2)+'\n');
+const liveEvent=events.find(e=>e.slug==='english-open-2026');const liveUpdate=tournamentUpdates['english-open-2026'];const liveScorePath='public/data/live-score.json';if(!existsSync(liveScorePath)){writeFileSync(liveScorePath,JSON.stringify({eventSlug:liveEvent.slug,eventName:liveEvent.name,...liveUpdate},null,2)+'\n')}else{const saved=JSON.parse(readFileSync(liveScorePath,'utf8'));if(!saved.eventSlug||!Array.isArray(saved.verifiedResults))throw Error('Invalid public live-score snapshot')}
 writeFileSync('public/data/rankings.json',JSON.stringify(rankingSnapshot,null,2)+'\n');
-const paths=['/','/calendar/season/',...months.map(m=>`/calendar/${m.value}/`),...['news','stories','players','rankings','stats','about','editorial-policy','contact','privacy','terms'].map(p=>`/${p}/`),...articles.map(a=>`/${a.category==='News'?'news':'stories'}/${a.slug}/`),...players.map(p=>`/players/${p.slug}/`),...events.map(e=>`/tournaments/${e.slug}/`)];
-const lastmod=path=>{const article=articles.find(a=>path.endsWith(`/${a.slug}/`));if(article)return article.date;if(path==='/'||path==='/rankings/'||path==='/players/'||path.startsWith('/players/'))return '2026-09-13';return '2026-09-12'};
+const paths=['/','/calendar/season/',...months.map(m=>`/calendar/${m.value}/`),...['news','stories','players','rankings','results','stats','about','editorial-policy','contact','privacy','terms'].map(p=>`/${p}/`),...articles.map(a=>`/${a.category==='News'?'news':'stories'}/${a.slug}/`),...players.map(p=>`/players/${p.slug}/`),...events.map(e=>`/tournaments/${e.slug}/`)];
+const lastmod=path=>{const article=articles.find(a=>path.endsWith(`/${a.slug}/`));if(article)return article.date;if(path==='/'||path==='/results/'||path==='/rankings/'||path==='/calendar/season/')return '2026-09-15';if(path==='/players/'||path.startsWith('/players/'))return '2026-09-13';return '2026-09-12'};
 writeFileSync('public/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${escapeXml(origin+p)}</loc><lastmod>${lastmod(p)}</lastmod></url>`).join('')}</urlset>`);
 writeFileSync('public/robots.txt',`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 writeFileSync('public/feed.xml',`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>The Snooker Calendar</title><link>${escapeXml(origin)}</link><description>Snooker news, stories and guides</description><language>en-gb</language>${articles.map(a=>`<item><title>${escapeXml(a.title)}</title><link>${escapeXml(origin+`/${a.category==='News'?'news':'stories'}/${a.slug}/`)}</link><guid>${escapeXml(origin+`/${a.category==='News'?'news':'stories'}/${a.slug}/`)}</guid><pubDate>${new Date(a.date+'T00:00:00Z').toUTCString()}</pubDate><description>${escapeXml(a.description)}</description></item>`).join('')}</channel></rss>`);
