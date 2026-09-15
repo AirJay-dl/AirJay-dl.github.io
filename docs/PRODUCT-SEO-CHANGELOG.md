@@ -33,6 +33,25 @@
 | Next-R01 | Planned | Guides | 建立 Getting Started、Rankings & Tournaments、Watching Snooker、History & Terminology 四类常识内容 | snooker rules; snooker scoring; 147 break; best of 11 frames | — | — |
 | Architecture-I18N | Planned | 全站与未来数据库 | 保留英文根目录，为 `/zh/`、翻译关系、hreflang 和语言字段做好架构准备 | 中文与其他语言需求待 GSC 验证 | — | — |
 
+## 已上线版本
+
+| Release ID | 状态 | 页面/模板 | 改动与假设 | 目标查询 | 上线日期 | 版本 | 数据观察 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-09-R03 | Live | `/results/` | 新建集中结果页，展示当前赛事、进行中比分、已完成比赛、后续赛程和历史冠军；预期承接比分与结果意图，并把访问导向赛事详情页 | snooker results; snooker results today; snooker live scores | 2026-09-15 | Git `25261fb`；Sites v5 | 基线待用户提供；2026-09-22 看 7 天收录与异常，2026-10-13 做 28 天判断，2026-11-10 做 56 天复查 |
+| 2026-09-R03 | Live | `/calendar/season/` | 重写标题、H1 与导语，增加当前/下一赛事、赛季内链和 FAQ；预期提升 schedule、fixtures、calendar 查询的相关性和页面参与度 | snooker schedule; snooker fixtures; snooker calendar | 2026-09-15 | Git `25261fb`；Sites v5 | 同上；赛事期间需单独标记搜索需求波动 |
+| 2026-09-R03 | Live | `/rankings/` | 明确 2026/27、Top 50、两年滚动排名奖金及官方/临时排名区别，增加结果页与球员页内链 | snooker rankings; snooker rankings 2026; world snooker rankings | 2026-09-15 | Git `25261fb`；Sites v5 | 基线待用户提供；重点观察非品牌展示、CTR、平均排名与球员页点击 |
+| 2026-09-R03 | Live | 全站导航、sitemap、结构化数据 | 导航拆分 Schedule 与 Results；结果页加入 sitemap；核心页加入 canonical、BreadcrumbList，58 个赛事页保留 SportsEvent；预期改善抓取、页面发现和搜索意图分流 | schedule/results/rankings 主题词群 | 2026-09-15 | Git `25261fb`；Sites v5 | 7 天检查索引和抓取异常；28 天比较三个目录的曝光分布 |
+
+## 2026-09-R03 数据回填表
+
+收到 GA4 和 Search Console 数据后，在这里保留原始口径与观察结论。基线建议使用 **2026-08-18 至 2026-09-14**；上线后窗口使用完整自然日，避免把 9 月 15 日的部分数据混入比较。
+
+| 页面 | GSC 基线：点击 / 曝光 / CTR / 平均排名 | GA4 基线：自然搜索用户 / 浏览 / 参与率 | 7 天 | 28 天 | 56 天 | 外部因素与结论 |
+| --- | --- | --- | --- | --- | --- | --- |
+| `/results/` | 待回填 | 待回填 | 2026-09-16—09-22 | 2026-09-16—10-13 | 2026-09-16—11-10 | 记录同期赛事、数据更新中断和搜索收录日期 |
+| `/calendar/season/` | 待回填 | 待回填 | 2026-09-16—09-22 | 2026-09-16—10-13 | 2026-09-16—11-10 | 记录当前赛事和赛历变更 |
+| `/rankings/` | 待回填 | 待回填 | 2026-09-16—09-22 | 2026-09-16—10-13 | 2026-09-16—11-10 | 记录官方排名表发布日期和排名赛结束时间 |
+
 ## 每次发布后的采集方法
 
 1. 在 Search Console 导出目标页面和查询的最近 28 天数据。
