@@ -29,7 +29,11 @@ for(const list of [snapshot.official,snapshot.live]){
  if(list.positions.length!==50)throw new Error(`${list.label} does not contain 50 positions`);
  if(new Set(list.positions.map(item=>item.rank)).size!==50)throw new Error(`${list.label} contains duplicate positions`);
 }
-await recordRankingSnapshot({snapshot,databasePath:process.env.SNOOKER_DB_PATH});
+try{
+ await recordRankingSnapshot({snapshot,databasePath:process.env.SNOOKER_DB_PATH});
+}catch(error){
+ console.error(`Database snapshot failed; JSON update will continue: ${error instanceof Error?error.message:String(error)}`);
+}
 await mkdir(dirname(output),{recursive:true});
 const temporary=`${output}.next`;
 await writeFile(temporary,JSON.stringify(snapshot,null,2)+'\n');

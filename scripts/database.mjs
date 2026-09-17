@@ -11,6 +11,7 @@ export async function openDatabase(path=process.env.SNOOKER_DB_PATH){
   const {DatabaseSync}=await import('node:sqlite');
   mkdirSync(dirname(path),{recursive:true});
   const db=new DatabaseSync(path);
+  db.exec('PRAGMA busy_timeout = 5000');
   db.exec(readFileSync(schemaPath,'utf8'));
   return db;
 }
