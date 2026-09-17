@@ -3,6 +3,7 @@ import {articles} from '@/content/articles';
 import {players} from '@/content/players';
 import {events, dateLabel} from '@/content/events';
 import {tournamentUpdates} from '@/content/tournament-updates';
+import {eventGuides} from '@/content/event-guides';
 import {TournamentLiveResults} from '@/components/tournament-live-results';
 import {metadata as pageMeta, href, absolute, jsonLd, site} from '@/lib/site';
 
@@ -19,8 +20,9 @@ export async function generateMetadata({params}: {params: Promise<{section: stri
   const article = articles.find((item) => item.slug === slug && (item.category === 'News' ? 'news' : 'stories') === section);
   const player = section === 'players' ? players.find((item) => item.slug === slug) : null;
   const event = section === 'tournaments' ? events.find((item) => item.slug === slug) : null;
+  const eventTitle=event?`${event.name} ${event.start.slice(0,4)}`:'Page not found';
   return pageMeta(
-    article?.title || player?.name || `${event?.name || 'Page not found'}: Schedule, Draw & Results`,
+    article?.title || player?.name || `${eventTitle}: Schedule, Draw, Results & Venue`,
     article?.description || player?.description || `${event?.name}: ${event ? dateLabel(event.start, true) : ''} to ${event ? dateLabel(event.end, true) : ''}. Schedule, draw and results with source attribution.`,
     `/${section}/${slug}/`,
   );
@@ -34,12 +36,14 @@ export default async function Page({params}: {params: Promise<{section: string; 
 
   if (!article && !player && !event) notFound();
 
-  const title = article?.title || player?.name || event!.name;
+  const guide=event?eventGuides[event.slug]:undefined;
+  const eventTitle=event?`${event.name} ${event.start.slice(0,4)}`:'';
+  const title = article?.title || player?.name || eventTitle;
   const eventUpdate = event ? tournamentUpdates[event.slug] : undefined;
   const checkedLabel = article
     ? new Date(`${article.date}T12:00:00Z`).toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'})
-    : player ? '13 September 2026' : eventUpdate?.checked || '12 September 2026';
-  const checkedDate = article?.date || (player?'2026-09-13':'2026-09-12');
+    : player ? '13 September 2026' : eventUpdate?.checked || guide?.checked || '12 September 2026';
+  const checkedDate = article?.date || (player?'2026-09-13':guide?'2026-09-18':'2026-09-12');
   const crumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -96,7 +100,7 @@ export default async function Page({params}: {params: Promise<{section: string; 
           <script type="application/ld+json" dangerouslySetInnerHTML={{__html: jsonLd({
             '@context': 'https://schema.org',
             '@type': 'SportsEvent',
-            name: event.name,
+            name: eventTitle,
             startDate: event.start,
             endDate: event.end,
             url: absolute(`/tournaments/${event.slug}/`),
@@ -106,12 +110,13 @@ export default async function Page({params}: {params: Promise<{section: string; 
           })}}/>
           <div className="prose">
             <dl className="fact-grid"><div><dt>Dates</dt><dd>{dateLabel(event.start)} – {dateLabel(event.end, true)}</dd></div><div><dt>Venue</dt><dd>{event.venue}</dd></div><div><dt>Tour</dt><dd>{event.tour}</dd></div><div><dt>Type</dt><dd>{event.type}</dd></div></dl>
-            <nav className="event-tabs" aria-label="Event page sections"><a href="#schedule">Schedule</a><a href="#draw">Draw</a><a href="#results">Results</a></nav>
-            <p>{event.note}</p>
+            <nav className="event-tabs" aria-label="Event page sections"><a href="#schedule">Schedule</a><a href="#draw">Draw</a><a href="#results">Results</a>{guide&&<a href="#venue">Venue & history</a>}</nav>
+            <p>{guide?.overview||event.note}</p>
 
             <section id="schedule">
               <h2>Schedule</h2>
               <p>{event.winner ? 'The tournament ran' : 'The event window runs'} from <strong>{dateLabel(event.start, true)}</strong> to <strong>{dateLabel(event.end, true)}</strong> at {event.venue}, {event.city}. {event.winner ? `The final result is confirmed below.` : eventUpdate ? 'The score snapshot below is checked against the linked source and carries its latest verification time.' : 'Session times can change, so check the linked organiser or data source before travelling.'}</p>
+              {guide&&<ul>{guide.scheduleNotes.map(note=><li key={note}>{note}</li>)}</ul>}
             </section>
 
             {!event.winner ? <TournamentLiveResults eventSlug={event.slug} initialData={eventUpdate}/> : <><section id="draw">
@@ -128,8 +133,16 @@ export default async function Page({params}: {params: Promise<{section: string; 
             </section>
             </>}
 
+            {guide&&<>
+              <section id="venue"><h2>Venue and travel context</h2><p>{guide.venue}</p></section>
+              <section><h2>Previous edition and event history</h2><p>{guide.history}</p></section>
+              <section><h2>Prize money</h2><p>{guide.prizeNote}</p></section>
+              <section><h2>Where to watch</h2><p>{guide.watchNote}</p></section>
+              <section className="event-related"><h2>Related tournament pages</h2><div>{guide.relatedSlugs.map(related=>{const item=events.find(candidate=>candidate.slug===related);return item?<a key={related} href={href(`/tournaments/${related}/`)}>{item.name} {item.start.slice(0,4)} ↗</a>:null})}</div></section>
+            </>}
+
             <h2>Save the dates</h2><p><a className="action-link" href={href(`/calendars/${event.slug}.ics`)} download>↓ Download this event (.ics)</a></p>
-            <aside className="sources"><h2>Data source</h2><p><strong>Data source: <a href={eventUpdate?.source || event.source}>{eventUpdate?.sourceLabel || 'Snooker.org'} ↗</a></strong></p><p>Checked {eventUpdate?.checked || '12 September 2026'}. Dates and venues are a dated snapshot. Session times, draws and results may change.</p></aside>
+            <aside className="sources"><h2>Data source</h2><p><strong>Data source: <a href={eventUpdate?.source || event.source}>{eventUpdate?.sourceLabel || 'World Snooker Tour / Snooker.org'} ↗</a></strong></p>{guide?.sources.map(source=><p key={source.url}><a href={source.url}>{source.label} ↗</a></p>)}<p>Checked {eventUpdate?.checked || guide?.checked || '12 September 2026'}. Dates and venues are a dated snapshot. Session times, draws and results may change.</p></aside>
           </div>
         </>}
 

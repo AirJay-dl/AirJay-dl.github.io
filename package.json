@@ -10,6 +10,7 @@
     "build": "node scripts/generate-assets.mjs && vinext build && node scripts/prepare-export.mjs",
     "update:live-score": "node scripts/update-live-score.mjs",
     "update:rankings": "node scripts/update-rankings.mjs",
+    "db:init": "node scripts/init-database.mjs",
     "watch:news": "node scripts/watch-news-sources.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",

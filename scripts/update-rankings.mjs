@@ -1,5 +1,6 @@
 import {mkdir,rename,writeFile} from 'node:fs/promises';
 import {dirname} from 'node:path';
+import {recordRankingSnapshot} from './database.mjs';
 
 const source=process.env.RANKINGS_SOURCE_URL||'https://rankings.snooker.web.gc.wstservices.co.uk/v2';
 const output=process.env.RANKINGS_OUTPUT||'/srv/snookercalendar/current/data/rankings.json';
@@ -28,6 +29,7 @@ for(const list of [snapshot.official,snapshot.live]){
  if(list.positions.length!==50)throw new Error(`${list.label} does not contain 50 positions`);
  if(new Set(list.positions.map(item=>item.rank)).size!==50)throw new Error(`${list.label} contains duplicate positions`);
 }
+await recordRankingSnapshot({snapshot,databasePath:process.env.SNOOKER_DB_PATH});
 await mkdir(dirname(output),{recursive:true});
 const temporary=`${output}.next`;
 await writeFile(temporary,JSON.stringify(snapshot,null,2)+'\n');

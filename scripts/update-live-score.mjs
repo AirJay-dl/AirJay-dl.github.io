@@ -1,5 +1,6 @@
 import {mkdir, readFile, rename, writeFile} from 'node:fs/promises';
 import {dirname} from 'node:path';
+import {recordTournamentSnapshot} from './database.mjs';
 
 const config = {
   calendar: process.env.SNOOKER_CALENDAR_URL || 'https://www.snooker.org/res/index.asp?season=2026&template=2',
@@ -97,6 +98,7 @@ else if(/^Final$/i.test(verifiedResults[0]?.round||'')) status='Tournament compl
 else if(!upcoming.length&&event.end<=day) status='Tournament complete';
 const summary=isUpcoming?`The next scheduled event begins ${event.start}. Match times are shown when confirmed by the source.`:'Scores are checked against the linked source. In-play figures may trail the table by up to 15 minutes.';
 const data={eventSlug:event.slug,eventName:event.name,checked:checkedLabel(now),source:event.source,sourceLabel:`Snooker.org · ${event.name}`,status,summary,verifiedResults,liveMatches,upcoming};
+await recordTournamentSnapshot({event,data,matches:parsed,databasePath:process.env.SNOOKER_DB_PATH});
 await mkdir(dirname(config.output),{recursive:true});
 const temporary=`${config.output}.next`;
 await writeFile(temporary,JSON.stringify(data,null,2)+'\n');

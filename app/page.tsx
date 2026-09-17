@@ -1,6 +1,7 @@
 import Calendar from '@/components/calendar';
 import {StoryCards} from '@/components/content-cards';
 import {LiveScoreboard} from '@/components/live-scoreboard';
+import {QuizPromo} from '@/components/quiz-promo';
 import type {TournamentUpdate} from '@/content/tournament-updates';
 import liveScoreSnapshot from '@/public/data/live-score.json';
 import {metadata as pageMeta, href} from '@/lib/site';
@@ -42,6 +43,8 @@ export default function Home() {
         <div className="section-bar"><div><p className="eyebrow">SCHEDULE & RESULTS</p><h2>The 2026/27 snooker season</h2></div><a href={href('/calendar/season/')}>Full season view ↗</a></div>
         <Calendar/>
       </section>
+
+      <QuizPromo/>
 
       <section id="guides" className="editorial-section">
         <div className="section-bar"><div><p className="eyebrow">GUIDES & CULTURE</p><h2>Beyond the scoreline</h2></div><a href={href('/stories/')}>All guides ↗</a></div>
