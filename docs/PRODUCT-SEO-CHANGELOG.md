@@ -31,6 +31,9 @@
 | Next-R01 | Planned | 球员页、排名页 | 将 `Ranking Money` 明确为 `Two-year ranking money`，增加滚动排名奖金释义，减少用户误解 | snooker ranking money; how snooker rankings work | — | — |
 | Next-R01 | Planned | Guides | 新增 `How Do Snooker World Rankings Work?`，并与排名榜、球员页和赛事页互链 | how do snooker rankings work; snooker world ranking system | — | — |
 | Next-R01 | Planned | Guides | 建立 Getting Started、Rankings & Tournaments、Watching Snooker、History & Terminology 四类常识内容 | snooker rules; snooker scoring; 147 break; best of 11 frames | — | — |
+| 2026-09-R05 | Planned · 2026-09-22 review | `/quiz/` | 结合 GA4、GSC 与 Semrush 数据调整标题、H1、说明文案与主关键词定位 | snooker quiz; free snooker quiz; snooker trivia | — | 方案已记录在 `docs/QUIZ-SEO-R05-PLAN.md` |
+| 2026-09-R05 | Planned · 2026-09-22 review | `/quiz/rules/`、`/quiz/players/`、`/quiz/history/` | 建立可抓取的专题页，在初始 HTML 中呈现问题、答案与解释，并完善结构化数据和上下文内链 | snooker rules quiz; snooker players quiz; snooker history quiz | — | 根据数据确认页面优先级后实施 |
+| 2026-09-R05 | Planned · 2026-09-22 review | Quiz GA4 | 增加分类选择、答题、继续下一轮、分享和相关内容点击事件 | 行为分析，无直接目标查询 | — | 与 `quiz_start`、`quiz_complete` 一并建立基线 |
 | Architecture-I18N | Planned | 全站与未来数据库 | 保留英文根目录，为 `/zh/`、翻译关系、hreflang 和语言字段做好架构准备 | 中文与其他语言需求待 GSC 验证 | — | — |
 
 ## 已上线版本
