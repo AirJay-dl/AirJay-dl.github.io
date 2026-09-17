@@ -37,9 +37,9 @@
 
 | Release ID | 状态 | 页面/模板 | 改动与假设 | 目标查询 | 上线日期 | 版本 | 数据观察 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-R04 | Ready | `/quiz/`、首页、Guides、Players、Rankings | 新增 60 道有来源的斯诺克知识题，分 3 类、每轮 5 题；加入首页推荐块、全站导航与语境内链；预期提高回访、参与时间和 Guides/Players 内容发现 | snooker quiz; snooker trivia; snooker rules quiz | 2026-09-18 | Git / Sites 待发布 | GA4 观察 `quiz_start`、`quiz_complete`、完成率、继续下一组比例；GSC 先观察收录和长尾展示 |
-| 2026-09-R04 | Ready | 5 个重点赛事页 | 为 Shenzhen Open、Northern Ireland Open、International Championship、Champion of Champions、UK Championship 增加赛程说明、场馆、历史、奖金与观看信息及相关赛事内链；预期承接赛事名 + year/schedule/venue/results 意图 | event name + 2026; schedule; draw; results; venue | 2026-09-18 | Git / Sites 待发布 | 赛事开始前后分别看目标页展示、点击、CTR 与跳转到 Results 的比例 |
-| 2026-09-R04 | Ready | 数据更新架构 | 建立 SQLite Phase 1：赛事、比赛、排名快照与任务运行记录；保留 JSON 为前端接口，先积累可回溯历史再做数据库读接口 | 技术基础，无直接目标查询 | 2026-09-18 | Git / VPS 待启用 | 观察更新成功率、记录数、数据延迟；本项不直接归因 SEO 增长 |
+| 2026-09-R04 | Sites Live / VPS pending | `/quiz/`、首页、Guides、Players、Rankings | 新增 60 道有来源的斯诺克知识题，分 3 类、每轮 5 题；加入首页推荐块、全站导航与语境内链；预期提高回访、参与时间和 Guides/Players 内容发现 | snooker quiz; snooker trivia; snooker rules quiz | 2026-09-18 | Git `9067310`；Sites v6 | GA4 观察 `quiz_start`、`quiz_complete`、完成率、继续下一组比例；GSC 先观察收录和长尾展示 |
+| 2026-09-R04 | Sites Live / VPS pending | 5 个重点赛事页 | 为 Shenzhen Open、Northern Ireland Open、International Championship、Champion of Champions、UK Championship 增加赛程说明、场馆、历史、奖金与观看信息及相关赛事内链；预期承接赛事名 + year/schedule/venue/results 意图 | event name + 2026; schedule; draw; results; venue | 2026-09-18 | Git `9067310`；Sites v6 | 赛事开始前后分别看目标页展示、点击、CTR 与跳转到 Results 的比例 |
+| 2026-09-R04 | Code ready / VPS pending | 数据更新架构 | 建立 SQLite Phase 1：赛事、比赛、排名快照与任务运行记录；保留 JSON 为前端接口，先积累可回溯历史再做数据库读接口 | 技术基础，无直接目标查询 | 2026-09-18 | Git `9067310`；VPS 待启用 | 观察更新成功率、记录数、数据延迟；本项不直接归因 SEO 增长 |
 | 2026-09-R03 | Live | `/results/` | 新建集中结果页，展示当前赛事、进行中比分、已完成比赛、后续赛程和历史冠军；预期承接比分与结果意图，并把访问导向赛事详情页 | snooker results; snooker results today; snooker live scores | 2026-09-15 | Git `25261fb`；Sites v5 | 基线待用户提供；2026-09-22 看 7 天收录与异常，2026-10-13 做 28 天判断，2026-11-10 做 56 天复查 |
 | 2026-09-R03 | Live | `/calendar/season/` | 重写标题、H1 与导语，增加当前/下一赛事、赛季内链和 FAQ；预期提升 schedule、fixtures、calendar 查询的相关性和页面参与度 | snooker schedule; snooker fixtures; snooker calendar | 2026-09-15 | Git `25261fb`；Sites v5 | 同上；赛事期间需单独标记搜索需求波动 |
 | 2026-09-R03 | Live | `/rankings/` | 明确 2026/27、Top 50、两年滚动排名奖金及官方/临时排名区别，增加结果页与球员页内链 | snooker rankings; snooker rankings 2026; world snooker rankings | 2026-09-15 | Git `25261fb`；Sites v5 | 基线待用户提供；重点观察非品牌展示、CTR、平均排名与球员页点击 |
