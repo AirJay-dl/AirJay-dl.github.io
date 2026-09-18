@@ -27,3 +27,11 @@ The current fallback reads the public English Open results page with an identify
 ```
 
 The score task uses one calendar request and one event request per run. Event IDs, active dates and round names are discovered from the source instead of being changed manually between tournaments.
+
+## R06 更新（2026-09-19）
+
+- 比分源检查仍为每 15 分钟；Results 浏览器读取缓存每 60 秒，这不是每分钟向来源采集。
+- 排名每 4 小时检查，要求官方/临时各 100 条且排名连续、身份唯一；不完整数据拒绝发布。以来源 player ID/slug 去重写入 players，保留历史球员，导出共享 players.json。配置数据库后，排名入库失败则不发布新快照。
+- 新闻每两小时（17 */2）从 WPBSA RSS 和 WST 新闻列表收集带日期的标题链接，存 news_items、source_runs，并原子写入 shared/data/news.json。首页和 News 自动读取；两来源都失败时保留旧文件，部分失败保留旧链接并显示提示。WST 列表可能返回旧文章，按原始发布日期排序，不能把检查时间冒充发表时间。
+- 自动新闻是带出处的外链索引，比分简报明确为数据生成；不会自动复制整篇报道或冒充原创编辑文章。
+- shared/data 与版本发布目录分离，切换/回滚页面不覆盖动态数据。迁移数据库前用 SQLite VACUUM INTO 备份。

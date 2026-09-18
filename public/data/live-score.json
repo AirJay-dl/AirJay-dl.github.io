@@ -1,10 +1,10 @@
 {
   "eventSlug": "international-championship-qualifiers-2026",
   "eventName": "International Championship Qualifiers",
-  "checked": "17 Sept 2026 · 18:10 UTC",
+  "checked": "18 Sept 2026 · 16:00 UTC",
   "source": "https://www.snooker.org/res/index.asp?event=2771",
   "sourceLabel": "Snooker.org · International Championship Qualifiers",
-  "status": "Qualifying in progress",
+  "status": "Match in progress",
   "summary": "Scores are checked against the linked source. In-play figures may trail the table by up to 15 minutes.",
   "verifiedResults": [
     {
@@ -21,9 +21,9 @@
     },
     {
       "round": "Qualifying round 2",
-      "playerOne": "Jordan Brown",
-      "score": "5–5",
-      "playerTwo": "Gao Yang"
+      "playerOne": "Gao Yang",
+      "score": "6–5",
+      "playerTwo": "Jordan Brown"
     },
     {
       "round": "Qualifying round 2",
@@ -40,7 +40,7 @@
     {
       "round": "Qualifying round 2",
       "playerOne": "Ben Woollaston",
-      "score": "4–2",
+      "score": "6–2",
       "playerTwo": "Sean O'Sullivan"
     },
     {
@@ -54,6 +54,12 @@
       "playerOne": "Oliver Lines",
       "score": "6–0",
       "playerTwo": "Connor Benzey"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Xiao Guodong",
+      "score": "4–1",
+      "playerTwo": "Dylan Emery"
     },
     {
       "round": "Qualifying round 2",
@@ -76,8 +82,14 @@
     {
       "round": "Qualifying round 2",
       "playerOne": "Kyren Wilson",
-      "score": "4–5",
+      "score": "6–5",
       "playerTwo": "Leone Crowley"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Mina Awad",
+      "score": "6–1",
+      "playerTwo": "Zak Surety"
     },
     {
       "round": "Qualifying round 2",
@@ -87,84 +99,145 @@
     },
     {
       "round": "Qualifying round 2",
-      "playerOne": "Stuart Bingham",
-      "score": "6–1",
-      "playerTwo": "Alfie Burden"
-    }
-  ],
-  "liveMatches": [],
-  "upcoming": [
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Zak Surety",
-      "playerTwo": "Mina Awad",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
       "playerOne": "Ricky Walden",
-      "playerTwo": "Paul Norris",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Tom Ford",
-      "playerTwo": "David Grace",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Joshua Thomond",
-      "playerTwo": "Louis Heathcote",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Matthew Stevens",
-      "playerTwo": "Jimmy White",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Neil Robertson",
-      "playerTwo": "Alexander Ursenbacher",
-      "timing": "17 Sept, 18:30 UTC"
-    },
-    {
-      "round": "Qualifying round 2",
-      "playerOne": "Jak Jones",
-      "playerTwo": "Liam Pullen",
-      "timing": "17 Sept, 18:30 UTC"
+      "score": "6–1",
+      "playerTwo": "Paul Norris"
     },
     {
       "round": "Qualifying round 2",
       "playerOne": "Zhou Yuelong",
-      "playerTwo": "Ashley Hugill",
-      "timing": "18 Sept, 08:30 UTC"
+      "score": "6–3",
+      "playerTwo": "Ashley Hugill"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "David Grace",
+      "score": "6–5",
+      "playerTwo": "Tom Ford"
     },
     {
       "round": "Qualifying round 2",
       "playerOne": "Liu Hongyu",
-      "playerTwo": "Lan Yuhao",
-      "timing": "18 Sept, 08:30 UTC"
+      "score": "6–3",
+      "playerTwo": "Lan Yuhao"
     },
     {
       "round": "Qualifying round 2",
-      "playerOne": "He Guoqiang",
-      "playerTwo": "Stuart Carrington",
-      "timing": "18 Sept, 08:30 UTC"
+      "playerOne": "Louis Heathcote",
+      "score": "6–3",
+      "playerTwo": "Joshua Thomond"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Stuart Carrington",
+      "score": "6–4",
+      "playerTwo": "He Guoqiang"
     },
     {
       "round": "Qualifying round 2",
       "playerOne": "Hossein Vafaei",
-      "playerTwo": "Cheung Ka Wai",
-      "timing": "18 Sept, 08:30 UTC"
+      "score": "6–1",
+      "playerTwo": "Cheung Ka Wai"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Jimmy White",
+      "score": "6–5",
+      "playerTwo": "Matthew Stevens"
     },
     {
       "round": "Qualifying round 2",
       "playerOne": "Mark Selby",
-      "playerTwo": "Luo Zetao",
-      "timing": "18 Sept, 08:30 UTC"
+      "score": "6–1",
+      "playerTwo": "Luo Zetao"
+    }
+  ],
+  "liveMatches": [
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Martin O'Donnell",
+      "score": "1–3",
+      "playerTwo": "Julien Leclercq"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Jamie Jones",
+      "score": "2–2",
+      "playerTwo": "Mitchell Mann"
+    }
+  ],
+  "upcoming": [
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Jack Lisowski",
+      "playerTwo": "Ashley Carty",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "John Higgins",
+      "playerTwo": "Craig Steadman",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Long Zehuang",
+      "playerTwo": "Phil O'Kane",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Matthew Selt",
+      "playerTwo": "Ross Muir",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Aaron Hill",
+      "playerTwo": "Antoni Kowalski",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Daniel Wells",
+      "playerTwo": "Oliver Brown",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Noppon Saengkham",
+      "playerTwo": "Sam Craigie",
+      "timing": "18 Sept, 18:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Si Jiahui",
+      "playerTwo": "Liu Yang",
+      "timing": "19 Sept, 08:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Xu Si",
+      "playerTwo": "Xu Yichen",
+      "timing": "19 Sept, 08:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Gary Wilson",
+      "playerTwo": "Onyee Ng",
+      "timing": "19 Sept, 08:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Lyu Haotian",
+      "playerTwo": "Mahmoud El Hareedy",
+      "timing": "19 Sept, 08:30 UTC"
+    },
+    {
+      "round": "Qualifying round 2",
+      "playerOne": "Shaun Murphy",
+      "playerTwo": "Zhao Hanyang",
+      "timing": "19 Sept, 08:30 UTC"
     }
   ]
 }

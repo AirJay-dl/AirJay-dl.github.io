@@ -1,3 +1,4 @@
+import {NewsFeed} from '@/components/news-feed';
 import Calendar from '@/components/calendar';
 import {StoryCards} from '@/components/content-cards';
 import {LiveScoreboard} from '@/components/live-scoreboard';
@@ -31,7 +32,7 @@ export default function Home() {
 
       <section id="top-stories" className="editorial-section">
         <div className="section-bar"><div><p className="eyebrow">THE DESK</p><h2>Top stories</h2></div><a href={href('/news/')}>All news ↗</a></div>
-        <StoryCards category="News" limit={6}/>
+        <NewsFeed limit={6}/><h2>Original briefings</h2><StoryCards category="News" limit={3}/>
       </section>
 
       <section id="on-tour" className="tour-overview">

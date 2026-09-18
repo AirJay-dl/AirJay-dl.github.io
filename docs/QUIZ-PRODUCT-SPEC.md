@@ -23,3 +23,7 @@ GA4 receives `quiz_start` with category and set number, and `quiz_complete` with
 ## Expansion rule
 
 Add questions in complete five-question sets. Expand a category from 20 to 40 only after the existing sets receive enough starts to show demand. New questions must include an explanation and a first-party or authoritative source.
+
+## R06 扩容
+
+题库扩为 150 道：Rules、Tournaments、Players 每类 50 道。每类 10 组，每组 5 道：20 道 Beginner、15 道 Fan、15 道 Expert。保留逐题解释与来源链接；完成第 10 组后回到第 1 组。专题 SEO 页面和更细的行为埋点仍按 R05 计划在 9 月 22 日结合数据决策。

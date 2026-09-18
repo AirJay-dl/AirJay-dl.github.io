@@ -1,4 +1,4 @@
-import {rankings} from './data.ts';
+import catalog from '../public/data/players.json' with {type:'json'};
 
 export type Player={slug:string;name:string;initials:string;country:string;born:string;pro:string;label:string;description:string;milestones:string[];bio:string;watch:string;source:string;rank:number;rankingMoney:number;editorial:boolean};
 
@@ -13,16 +13,17 @@ const bornLabel=(date:string)=>new Date(`${date}T12:00:00Z`).toLocaleDateString(
 const initials=(name:string)=>{const parts=name.split(' ');return `${parts[0][0]}${parts.at(-1)?.[0]||''}`.toUpperCase()};
 const money=(value:number)=>`£${value.toLocaleString('en-GB')}`;
 
-export const players:Player[]=rankings.map(([rank,name,slug,country,rankingMoney,dob,pro,nickname,playerId])=>{
+export const players:Player[]=catalog.players.map(row=>{
+ const {name,slug,country}=row;const rank=row.rank||row.liveRank||0,rankingMoney=row.rankingMoney||0,dob=row.born,pro=row.turnedPro,nickname='';
  const richer=editorial[slug];
  const base:Player={
-  slug,name,initials:initials(name),country,born:bornLabel(dob),pro:String(pro),rank,rankingMoney,
-  label:nickname||`World No. ${rank}`,
-  description:`${country} professional listed at world number ${rank} after the 2026 British Open.`,
-  milestones:[`Official world ranking · No. ${rank}`,`Two-year ranking total · ${money(rankingMoney)}`,`Turned professional · ${pro}`],
-  bio:`${name} represents ${country} on the World Snooker Tour. The official list after the 2026 British Open places ${name} at number ${rank} with ${money(rankingMoney)} in two-year ranking prize money. WST records a professional debut in ${pro}.`,
+  slug,name,initials:initials(name),country,born:dob?bornLabel(dob):'Not recorded',pro:pro?String(pro):'Not recorded',rank,rankingMoney,
+  label:nickname||'Player profile',
+  description:`${name}: ${country} snooker player, ranking record and career background.`,
+  milestones:[`Represents · ${country}`,`Professional debut · ${pro||'Not recorded'}`,`Ranking record · Official and provisional lists shown above`],
+  bio:`${name} represents ${country} on the World Snooker Tour. The ranking panel above shows the latest stored official and provisional positions. ${pro?`WST records a professional debut in ${pro}.`:''}`,
   watch:`Use the season calendar to follow ${name} through ranking events and qualifiers. Results and ranking totals are checked against the linked source; the ranking figure can change after each eligible tournament.`,
-  source:`https://www.wst.tv/players/${playerId}`,
+  source:row.source,
   editorial:Boolean(richer),
  };
  return {...base,...richer};

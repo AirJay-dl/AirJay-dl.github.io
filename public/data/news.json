@@ -1,0 +1,115 @@
+{
+  "checkedAt": "2026-09-18T15:44:31.867Z",
+  "intervalMinutes": 120,
+  "items": [
+    {
+      "title": "Tickets On Sale For 2027 World Seniors Snooker Championship",
+      "url": "https://www.wpbsa.com/tickets-on-sale-for-2027-world-seniors-snooker-championship/",
+      "publishedAt": "2026-09-16T14:23:25.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "European Disability Snooker Championship 2026 | Tournament Information",
+      "url": "https://www.wpbsa.com/european-disability-snooker-championship-2026-tournament-information/",
+      "publishedAt": "2026-09-15T09:47:17.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "How To Watch The September Qualifiers",
+      "url": "https://www.wpbsa.com/how-to-watch-the-september-qualifiers/",
+      "publishedAt": "2026-09-14T08:11:51.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Captain Soars To English Open Crown",
+      "url": "https://www.wpbsa.com/captain-soars-to-english-open-crown/",
+      "publishedAt": "2026-09-14T07:00:26.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Q Tour Europe 2026/27 – Event 2 | Tournament Information",
+      "url": "https://www.wpbsa.com/q-tour-europe-2026-27-event-2-tournament-information/",
+      "publishedAt": "2026-09-08T09:00:06.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "How To Watch The 2026 BetVictor English Open",
+      "url": "https://www.wpbsa.com/how-to-watch-the-2026-betvictor-english-open/",
+      "publishedAt": "2026-09-07T08:38:18.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Giant-Killer Jones Beats Selby In British Final",
+      "url": "https://www.wpbsa.com/giant-killer-jones-beats-selby-in-british-final/",
+      "publishedAt": "2026-09-07T08:29:46.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Bai Yulu Completes UK Hat-Trick to Reclaim Top Ranking",
+      "url": "https://www.wpbsa.com/bai-yulu-completes-uk-hat-trick-to-reclaim-top-ranking/",
+      "publishedAt": "2026-09-07T08:20:00.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Shenzhen Open Officially Launched",
+      "url": "https://www.wpbsa.com/shenzhen-open-officially-launched/",
+      "publishedAt": "2026-09-05T08:35:47.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Snooker Officially Staying In Sheffield After Landmark Contract Signed",
+      "url": "https://www.wpbsa.com/snooker-officially-staying-in-sheffield-after-landmark-contract-signed/",
+      "publishedAt": "2026-09-02T15:11:09.000Z",
+      "source": "WPBSA",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Trump Captures Second Shanghai Crown",
+      "url": "https://www.wst.tv/news/2026/august/02/trump-captures-second-shanghai-crown/",
+      "publishedAt": "2026-08-02T00:00:00.000Z",
+      "source": "WST",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "TAOM Extends WST Partnership And Becomes Shoot Out Title Partner",
+      "url": "https://www.wst.tv/news/2026/july/30/taom/",
+      "publishedAt": "2026-07-30T00:00:00.000Z",
+      "source": "WST",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    },
+    {
+      "title": "Upcoming Fixtures",
+      "url": "https://www.wst.tv/news/2025/september/08/fixtures/",
+      "publishedAt": "2025-09-08T00:00:00.000Z",
+      "source": "WST",
+      "firstSeen": "2026-09-18T15:44:31.867Z"
+    }
+  ],
+  "sources": [
+    {
+      "name": "WPBSA",
+      "url": "https://www.wpbsa.com/feed/",
+      "kind": "rss",
+      "status": "ok",
+      "checkedAt": "2026-09-18T15:44:31.867Z",
+      "count": 10
+    },
+    {
+      "name": "WST",
+      "url": "https://www.wst.tv/news/",
+      "kind": "html",
+      "status": "ok",
+      "checkedAt": "2026-09-18T15:44:31.867Z",
+      "count": 3
+    }
+  ]
+}

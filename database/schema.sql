@@ -93,3 +93,12 @@ CREATE TABLE IF NOT EXISTS source_runs (
 );
 
 CREATE INDEX IF NOT EXISTS source_runs_job_time_idx ON source_runs (job_name, finished_at DESC);
+
+CREATE TABLE IF NOT EXISTS news_items (
+  url TEXT PRIMARY KEY,
+  title TEXT NOT NULL,
+  source TEXT NOT NULL,
+  published_at TEXT NOT NULL,
+  first_seen_at TEXT NOT NULL,
+  checked_at TEXT NOT NULL
+);

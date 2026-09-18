@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect,useState} from 'react';
+import {players} from '@/content/players';
 import {href} from '@/lib/site';
 
 type Position={rank:number;name:string;slug:string;country:string;money:number};
@@ -18,7 +19,7 @@ export function RankingTable({initial}:{initial:RankingSnapshot}){
     const response=await fetch('/data/rankings.json',{cache:'no-store'});
     if(!response.ok)return;
     const next=await response.json() as RankingSnapshot;
-    if(next.official?.positions?.length===50)setSnapshot(next);
+    if(next.official?.positions?.length===100)setSnapshot(next);
    }catch{}
   };
   void refresh();
@@ -32,7 +33,7 @@ export function RankingTable({initial}:{initial:RankingSnapshot}){
    <button type="button" className={mode==='live'?'active':''} disabled={!snapshot.live} onClick={()=>setMode('live')}>Live ranking</button>
   </div>
   <div className="ranking-status"><strong>{mode==='live'&&snapshot.live?'Live projection':'Official list'}</strong><span>{list.label}</span><span>Updated {snapshot.checked}</span></div>
-  <div className="table-wrap"><table><caption>Top 50 world snooker rankings</caption><thead><tr><th>Rank</th><th>Player</th><th>Represents</th><th>Ranking money</th></tr></thead><tbody>{list.positions.map(row=><tr key={row.slug}><td>{row.rank}</td><th scope="row"><a href={href(`/players/${row.slug}/`)}>{row.name}</a></th><td>{row.country}</td><td>{money(row.money)}</td></tr>)}</tbody></table></div>
+  <div className="table-wrap"><table><caption>Top 100 world snooker rankings</caption><thead><tr><th>Rank</th><th>Player</th><th>Represents</th><th>Two-year ranking money</th></tr></thead><tbody>{list.positions.map(row=><tr key={row.slug}><td>{row.rank}</td><th scope="row"><a href={href(players.some(p=>p.slug===row.slug)?`/players/${row.slug}/`:`/players/profile/?player=${encodeURIComponent(row.slug)}`)}>{row.name}</a></th><td>{row.country}</td><td>{money(row.money)}</td></tr>)}</tbody></table></div>
   <p className="data-source"><strong>Data source: <a href={snapshot.source}>World Snooker Tour ↗</a></strong> · Official rankings are confirmed lists. Live rankings are provisional and can change as the current tournament progresses.</p>
  </>;
 }

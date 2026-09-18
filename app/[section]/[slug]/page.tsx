@@ -1,3 +1,4 @@
+import {PlayerFacts} from '@/components/player-directory';
 import {notFound} from 'next/navigation';
 import {articles} from '@/content/articles';
 import {players} from '@/content/players';
@@ -42,8 +43,8 @@ export default async function Page({params}: {params: Promise<{section: string; 
   const eventUpdate = event ? tournamentUpdates[event.slug] : undefined;
   const checkedLabel = article
     ? new Date(`${article.date}T12:00:00Z`).toLocaleDateString('en-GB', {day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'})
-    : player ? '13 September 2026' : eventUpdate?.checked || guide?.checked || '12 September 2026';
-  const checkedDate = article?.date || (player?'2026-09-13':guide?'2026-09-18':'2026-09-12');
+    : player ? '18 September 2026' : eventUpdate?.checked || guide?.checked || '12 September 2026';
+  const checkedDate = article?.date || (player?'2026-09-18':guide?'2026-09-18':'2026-09-12');
   const crumbs = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -86,13 +87,13 @@ export default async function Page({params}: {params: Promise<{section: string; 
         </>}
 
         {player && <>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: jsonLd({'@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: {'@type': 'Person', name: player.name, nationality: player.country, jobTitle: 'Professional snooker player', sameAs: player.source}, dateModified: '2026-09-13'})}}/>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{__html: jsonLd({'@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: {'@type': 'Person', name: player.name, nationality: player.country, jobTitle: 'Professional snooker player', sameAs: player.source}, dateModified: '2026-09-18'})}}/>
           <div className="prose">
-            <dl className="fact-grid player-facts"><div><dt>World ranking</dt><dd>No. {player.rank}</dd></div><div><dt>Ranking money</dt><dd>£{player.rankingMoney.toLocaleString('en-GB')}</dd></div><div><dt>Represents</dt><dd>{player.country}</dd></div><div><dt>Born</dt><dd>{player.born}</dd></div><div><dt>First turned pro</dt><dd>{player.pro}</dd></div></dl>
+            <PlayerFacts slug={player.slug}/>
             <h2>Career in focus</h2><p>{player.bio}</p>
             <h2>{player.editorial?'Three milestones':'Current profile snapshot'}</h2><ul>{player.milestones.map((milestone) => <li key={milestone}>{milestone}</li>)}</ul>
             <h2>A viewing prompt</h2><p>{player.watch}</p>
-            <aside className="sources"><h2>Profile source</h2><a href={player.source}>Official WST player profile ↗</a><p>Ranking, nationality, birth date and professional debut were checked on 13 September 2026. Editorial biographies, season results and head-to-head records will continue to expand.</p></aside>
+            <aside className="sources"><h2>Profile source</h2><a href={player.source}>Official WST player profile ↗</a><p>Ranking facts refresh from the stored WST lists. Missing biographical details are left unrecorded. Editorial biographies, season results and head-to-head records will continue to expand.</p></aside>
           </div>
         </>}
 

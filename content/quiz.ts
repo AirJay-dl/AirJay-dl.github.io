@@ -1,5 +1,6 @@
+import {extraQuestions} from './quiz-extra.ts';
 export type QuizCategory='rules'|'tournaments'|'players';
-export type QuizQuestion={id:string;category:QuizCategory;question:string;options:[string,string,string,string];answer:number;explanation:string;source:{label:string;url:string}};
+export type QuizQuestion={difficulty?:'Beginner'|'Fan'|'Expert';id:string;category:QuizCategory;question:string;options:[string,string,string,string];answer:number;explanation:string;source:{label:string;url:string}};
 
 export const quizCategories:{id:QuizCategory;number:string;kicker:string;title:string;description:string}[]=[
   {id:'rules',number:'01',kicker:'The essentials',title:'Rules and scoring',description:'Ball values, breaks, fouls and the structure of a frame.'},
@@ -7,7 +8,7 @@ export const quizCategories:{id:QuizCategory;number:string;kicker:string;title:s
   {id:'players',number:'03',kicker:'The people',title:'Players and records',description:'Champions, nicknames, landmark titles and memorable maximums.'},
 ];
 
-const rulebook={label:'WPBSA official rules',url:'https://wpbsa.com/wp-content/uploads/Rulebook-Website-Updated-May-2022-2.pdf'};
+const rulebook={label:'WPBSA official rules',url:'https://www.wpbsa.com/wp-content/uploads/2198_WPBSA-Rulebook-2024-25.pdf'};
 const history={label:'WPBSA history of snooker',url:'https://wpbsa.com/about-us/history/'};
 const wst={label:'World Snooker Tour',url:'https://www.wst.tv/'};
 const calendar={label:'World Snooker Tour calendar',url:'https://www.wst.tv/fullcalendarwithseedingcut-offs/'};
@@ -77,4 +78,5 @@ export const quizQuestions:QuizQuestion[]=[
   {id:'players-18',category:'players',question:'Which player won both the amateur and professional world titles?',options:['Ken Doherty','Dennis Taylor','Mark Allen','Barry Hawkins'],answer:0,explanation:'Ken Doherty won the World Amateur Championship in 1989 and the professional title in 1997.',source:players},
   {id:'players-19',category:'players',question:'At which event did Jack Lisowski win his first ranking title?',options:['2025 Northern Ireland Open','2025 UK Championship','2026 Welsh Open','2025 Scottish Open'],answer:0,explanation:'Lisowski beat Judd Trump 9–8 in Belfast to end his wait for a ranking title.',source:{label:'WST: Jack Lisowski profile',url:'https://www.wst.tv/players/d56f02ab-f2df-41ca-b9a4-24167aded141'}},
   {id:'players-20',category:'players',question:'Which event gave Wu Yize his first ranking title?',options:['2025 International Championship','2026 World Championship','2025 Scottish Open','2026 Masters'],answer:0,explanation:'Wu beat John Higgins 10–6 in the 2025 International Championship final in Nanjing.',source:{label:'WST: Wu Yize profile',url:'https://www.wst.tv/players/d935d534-e696-4292-b773-e9b8efee1ea7'}},
+  ...extraQuestions,
 ];

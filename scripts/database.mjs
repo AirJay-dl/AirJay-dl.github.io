@@ -13,6 +13,10 @@ export async function openDatabase(path=process.env.SNOOKER_DB_PATH){
   const db=new DatabaseSync(path);
   db.exec('PRAGMA busy_timeout = 5000');
   db.exec(readFileSync(schemaPath,'utf8'));
+  const columns=new Set(db.prepare('PRAGMA table_info(players)').all().map(c=>c.name));
+  for(const [name,type] of [['source_player_id','TEXT'],['first_seen_at','TEXT']])if(!columns.has(name))db.exec(`ALTER TABLE players ADD COLUMN ${name} ${type}`);
+  db.exec("CREATE UNIQUE INDEX IF NOT EXISTS players_source_id_idx ON players(source_player_id) WHERE source_player_id IS NOT NULL");
+  db.exec('INSERT OR IGNORE INTO schema_migrations(version) VALUES(2)');
   return db;
 }
 
@@ -65,10 +69,30 @@ export async function recordRankingSnapshot({snapshot,databasePath}){
         VALUES (?,?,?,?)`).run(type,list.label,snapshot.source,new Date().toISOString());
       const insert=db.prepare(`INSERT INTO ranking_positions
         (ranking_list_id,rank,player_slug,player_name,country,prize_money) VALUES (?,?,?,?,?,?)`);
-      for(const row of list.positions)insert.run(result.lastInsertRowid,row.rank,row.slug,row.name,row.country,row.money);
+      for(const row of list.positions){
+        const existing=row.sourceId?db.prepare('SELECT slug FROM players WHERE source_player_id=?').get(row.sourceId):null;
+        if(existing&&existing.slug!==row.slug)db.prepare('UPDATE players SET slug=? WHERE source_player_id=?').run(row.slug,row.sourceId);
+        db.prepare(`INSERT INTO players(slug,name,country,born_date,turned_pro,source_url,checked_at,source_player_id,first_seen_at)
+          VALUES(?,?,?,?,?,?,?,?,?) ON CONFLICT(slug) DO UPDATE SET name=excluded.name,country=excluded.country,
+          born_date=COALESCE(excluded.born_date,players.born_date),turned_pro=COALESCE(excluded.turned_pro,players.turned_pro),
+          source_url=excluded.source_url,source_player_id=COALESCE(excluded.source_player_id,players.source_player_id),
+          checked_at=excluded.checked_at,updated_at=CURRENT_TIMESTAMP`).run(row.slug,row.name,row.country,row.born||null,row.turnedPro||null,row.source||snapshot.source,new Date().toISOString(),row.sourceId||null,new Date().toISOString());
+        insert.run(result.lastInsertRowid,row.rank,row.slug,row.name,row.country,row.money);
+      }
     }
     db.prepare(`INSERT INTO source_runs (job_name,source_url,started_at,finished_at,run_status,record_count,message)
-      VALUES (?,?,?,?,?,?,?)`).run('rankings',snapshot.sourceApi,startedAt,new Date().toISOString(),'success',100,snapshot.official.label);
+      VALUES (?,?,?,?,?,?,?)`).run('rankings',snapshot.sourceApi,startedAt,new Date().toISOString(),'success',snapshot.official.positions.length+snapshot.live.positions.length,snapshot.official.label);
     db.exec('COMMIT');
   }catch(error){db.exec('ROLLBACK');throw error}finally{db.close()}
+}
+
+export async function readPlayerCatalog(path){
+ const db=await openDatabase(path);
+ try{return db.prepare(`SELECT p.slug,p.name,p.country,p.born_date AS born,p.turned_pro AS turnedPro,p.source_url AS source,
+ p.source_player_id AS sourceId,p.first_seen_at AS firstSeen,p.checked_at AS lastSeen,
+ o.rank,l.rank AS liveRank,COALESCE(o.prize_money,l.prize_money) AS rankingMoney
+ FROM players p
+ LEFT JOIN ranking_positions o ON o.player_slug=p.slug AND o.ranking_list_id=(SELECT MAX(id) FROM ranking_lists WHERE list_type='official')
+ LEFT JOIN ranking_positions l ON l.player_slug=p.slug AND l.ranking_list_id=(SELECT MAX(id) FROM ranking_lists WHERE list_type='live')
+ ORDER BY o.rank IS NULL,o.rank,p.name`).all();}finally{db.close()}
 }
